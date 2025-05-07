@@ -49,7 +49,7 @@
 						<button><i class="icofont icofont-search"></i></button>
 					</form>
 					<ul>
-			
+
 						<li><a class="" href="../../Auth/login.php">Login</a></li>
 					</ul>
 				</div>
@@ -341,12 +341,12 @@
 				<div class="row hero-area-slide">
 					<div class="col-lg-6 col-md-5">
 						<div class="hero-area-content">
-							<img src="assets/img/slide2.png" alt="about" />
+							<img src="assets/img/DogMAN.jpg" alt="about" />
 						</div>
 					</div>
 					<div class="col-lg-6 col-md-7">
 						<div class="hero-area-content pr-50">
-							<h2>The Devil Princess</h2>
+							<h2>DogMan</h2>
 							<div class="review">
 								<div class="author-review">
 									<i class="icofont icofont-star"></i>
@@ -355,36 +355,10 @@
 									<i class="icofont icofont-star"></i>
 									<i class="icofont icofont-star"></i>
 								</div>
-								<h4>180k voters</h4>
+								<h4>100k voters</h4>
 							</div>
-							<p>She is a devil princess from the demon world. She grew up sheltered by her parents and doesn't really know how to be evil or any of the common actions, She is unable to cry due to Keita's accidental first wish, despite needed for him to wish...</p>
-							<h3>Cast:</h3>
-							<div class="slide-cast">
-								<div class="single-slide-cast">
-									<img src="assets/img/cast/cast1.png" alt="about" />
-								</div>
-								<div class="single-slide-cast">
-									<img src="assets/img/cast/cast2.php" alt="about" />
-								</div>
-								<div class="single-slide-cast">
-									<img src="assets/img/cast/cast3.png" alt="about" />
-								</div>
-								<div class="single-slide-cast">
-									<img src="assets/img/cast/cast4.png" alt="about" />
-								</div>
-								<div class="single-slide-cast">
-									<img src="assets/img/cast/cast5.png" alt="about" />
-								</div>
-								<div class="single-slide-cast">
-									<img src="assets/img/cast/cast6.png" alt="about" />
-								</div>
-								<div class="single-slide-cast">
-									<img src="assets/img/cast/cast7.png" alt="about" />
-								</div>
-								<div class="single-slide-cast text-center">
-									5+
-								</div>
-							</div>
+							<p>Dog Man, half dog and half man, he is sworn to protect and serve as he doggedly pursues the feline supervillain Petey the Cat....</p>
+
 							<div class="slide-trailor">
 								<h3>Watch Trailer</h3>
 								<a class="theme-btn theme-btn2" href="#"><i class="icofont icofont-play"></i> Tickets</a>
@@ -395,12 +369,12 @@
 				<div class="row hero-area-slide">
 					<div class="col-lg-6 col-md-5">
 						<div class="hero-area-content">
-							<img src="assets/img/slide1.png" alt="about" />
+							<img src="assets/img/The Wolverine.jpeg" alt="about" />
 						</div>
 					</div>
 					<div class="col-lg-6 col-md-7">
 						<div class="hero-area-content pr-50">
-							<h2>Last Avatar</h2>
+							<h2>The Wolverine</h2>
 							<div class="review">
 								<div class="author-review">
 									<i class="icofont icofont-star"></i>
@@ -409,36 +383,10 @@
 									<i class="icofont icofont-star"></i>
 									<i class="icofont icofont-star"></i>
 								</div>
-								<h4>180k voters</h4>
+								<h4>190k voters</h4>
 							</div>
-							<p>She is a devil princess from the demon world. She grew up sheltered by her parents and doesn't really know how to be evil or any of the common actions, She is unable to cry due to Keita's accidental first wish, despite needed for him to wish...</p>
-							<h3>Cast:</h3>
-							<div class="slide-cast">
-								<div class="single-slide-cast">
-									<img src="assets/img/cast/cast1.png" alt="about" />
-								</div>
-								<div class="single-slide-cast">
-									<img src="assets/img/cast/cast2.php" alt="about" />
-								</div>
-								<div class="single-slide-cast">
-									<img src="assets/img/cast/cast3.png" alt="about" />
-								</div>
-								<div class="single-slide-cast">
-									<img src="assets/img/cast/cast4.png" alt="about" />
-								</div>
-								<div class="single-slide-cast">
-									<img src="assets/img/cast/cast5.png" alt="about" />
-								</div>
-								<div class="single-slide-cast">
-									<img src="assets/img/cast/cast6.png" alt="about" />
-								</div>
-								<div class="single-slide-cast">
-									<img src="assets/img/cast/cast7.png" alt="about" />
-								</div>
-								<div class="single-slide-cast text-center">
-									5+
-								</div>
-							</div>
+							<p>The Wolverine is a 2013 superhero film featuring the Marvel Comics character Wolverine. It is the sixth installment in the X-Men film series, the second installment in the trilogy of Wolverine films after X-Men Origins: Wolverine (2009), and a spin-off/sequel to X-Men: The Last Stand (2006)</p>
+
 							<div class="slide-trailor">
 								<h3>Watch Trailer</h3>
 								<a class="theme-btn theme-btn2" href="#"><i class="icofont icofont-play"></i> Tickets</a>
@@ -449,12 +397,103 @@
 				<div class="row hero-area-slide">
 					<div class="col-lg-6 col-md-5">
 						<div class="hero-area-content">
-							<img src="assets/img/slide3.png" alt="about" />
+							<img src="assets/img/Se7en_.jpg" alt="about" />
 						</div>
 					</div>
 					<div class="col-lg-6 col-md-7">
 						<div class="hero-area-content pr-50">
-							<h2>The Deer God</h2>
+							<h2>Se7en</h2>
+							<div class="review">
+								<div class="author-review">
+									<i class="icofont icofont-star"></i>
+									<i class="icofont icofont-star"></i>
+									<i class="icofont icofont-star"></i>
+									<i class="icofont icofont-star"></i>
+									<i class="icofont icofont-star"></i>
+								</div>
+								<h4>150k voters</h4>
+							</div>
+							<p>Seven (often stylized as Se7en)[1] is a 1995 American crime thriller film directed by David Fincher and written by Andrew Kevin Walker. It stars Brad Pitt and Morgan Freeman, with Gwyneth Paltrow and John C. McGinley in supporting roles. Set in an unnamed, crime-ridden city, Seven's narrative follows disenchanted, nearly retired Detective Lieutenant William Somerset (Freeman) and his newly transferred partner David Mills (Pitt) as they try to stop a serial killer from committing a series of murders based on the seven deadly sins...</p>
+
+							<div class="slide-trailor">
+								<h3>Watch Trailer</h3>
+								<a class="theme-btn theme-btn2" href="#"><i class="icofont icofont-play"></i> Tickets</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row hero-area-slide">
+					<div class="col-lg-6 col-md-5">
+						<div class="hero-area-content">
+							<img src="assets/img/The Brutalist.avif" alt="about" />
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-7">
+						<div class="hero-area-content pr-50">
+							<h2>The Brutalist</h2>
+							<div class="review">
+								<div class="author-review">
+									<i class="icofont icofont-star"></i>
+									<i class="icofont icofont-star"></i>
+									<i class="icofont icofont-star"></i>
+									<i class="icofont icofont-star"></i>
+									<i class="icofont icofont-star"></i>
+								</div>
+								<h4>140k voters</h4>
+							</div>
+							<p>A visionary architect flees post-war Europe in 1947 for a brighter future in the United States and finds his life forever changed by a wealthy client...</p>
+
+
+						</div>
+						<div class="slide-trailor">
+							<h3>Watch Trailer</h3>
+							<a class="theme-btn theme-btn2" href="#"><i class="icofont icofont-play"></i> Tickets</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="hero-area-thumb">
+			<div class="thumb-prev">
+				<div class="row hero-area-slide">
+					<div class="col-lg-6">
+						<div class="hero-area-content">
+							<img src="assets/img/WolfMan.avif" alt="about" />
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="hero-area-content pr-50">
+							<h2>Wolfman</h2>
+							<div class="review">
+								<div class="author-review">
+									<i class="icofont icofont-star"></i>
+									<i class="icofont icofont-star"></i>
+									<i class="icofont icofont-star"></i>
+									<i class="icofont icofont-star"></i>
+									<i class="icofont icofont-star"></i>
+								</div>
+								<h4>180k voters</h4>
+							</div>
+							<p>The Wolverine is a 2013 superhero film featuring the Marvel Comics character Wolverine. It is the sixth installment in the X-Men film series, the second installment in the trilogy of Wolverine films after X-Men Origins: Wolverine (2009), and a spin-off/sequel to X-Men: The Last Stand (2006). ...</p>
+
+							<div class="slide-trailor">
+								<h3>Watch Trailer</h3>
+								<a class="theme-btn theme-btn2" href="#"><i class="icofont icofont-play"></i> Tickets</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="thumb-next">
+				<div class="row hero-area-slide">
+					<div class="col-lg-6">
+						<div class="hero-area-content">
+							<img src="assets/img/DogMAN.jpg" alt="about" />
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="hero-area-content pr-50">
+							<h2>DogMan</h2>
 							<div class="review">
 								<div class="author-review">
 									<i class="icofont icofont-star"></i>
@@ -466,33 +505,7 @@
 								<h4>180k voters</h4>
 							</div>
 							<p>She is a devil princess from the demon world. She grew up sheltered by her parents and doesn't really know how to be evil or any of the common actions, She is unable to cry due to Keita's accidental first wish, despite needed for him to wish...</p>
-							<h3>Cast:</h3>
-							<div class="slide-cast">
-								<div class="single-slide-cast">
-									<img src="assets/img/cast/cast1.png" alt="about" />
-								</div>
-								<div class="single-slide-cast">
-									<img src="assets/img/cast/cast2.php" alt="about" />
-								</div>
-								<div class="single-slide-cast">
-									<img src="assets/img/cast/cast3.png" alt="about" />
-								</div>
-								<div class="single-slide-cast">
-									<img src="assets/img/cast/cast4.png" alt="about" />
-								</div>
-								<div class="single-slide-cast">
-									<img src="assets/img/cast/cast5.png" alt="about" />
-								</div>
-								<div class="single-slide-cast">
-									<img src="assets/img/cast/cast6.png" alt="about" />
-								</div>
-								<div class="single-slide-cast">
-									<img src="assets/img/cast/cast7.png" alt="about" />
-								</div>
-								<div class="single-slide-cast text-center">
-									5+
-								</div>
-							</div>
+
 							<div class="slide-trailor">
 								<h3>Watch Trailer</h3>
 								<a class="theme-btn theme-btn2" href="#"><i class="icofont icofont-play"></i> Tickets</a>
@@ -501,120 +514,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="hero-area-thumb">
-				<div class="thumb-prev">
-					<div class="row hero-area-slide">
-						<div class="col-lg-6">
-							<div class="hero-area-content">
-								<img src="assets/img/slide3.png" alt="about" />
-							</div>
-						</div>
-						<div class="col-lg-6">
-							<div class="hero-area-content pr-50">
-								<h2>Last Avatar</h2>
-								<div class="review">
-									<div class="author-review">
-										<i class="icofont icofont-star"></i>
-										<i class="icofont icofont-star"></i>
-										<i class="icofont icofont-star"></i>
-										<i class="icofont icofont-star"></i>
-										<i class="icofont icofont-star"></i>
-									</div>
-									<h4>180k voters</h4>
-								</div>
-								<p>She is a devil princess from the demon world. She grew up sheltered by her parents and doesn't really know how to be evil or any of the common actions, She is unable to cry due to Keita's accidental first wish, despite needed for him to wish...</p>
-								<h3>Cast:</h3>
-								<div class="slide-cast">
-									<div class="single-slide-cast">
-										<img src="assets/img/cast/cast1.png" alt="about" />
-									</div>
-									<div class="single-slide-cast">
-										<img src="assets/img/cast/cast2.php" alt="about" />
-									</div>
-									<div class="single-slide-cast">
-										<img src="assets/img/cast/cast3.png" alt="about" />
-									</div>
-									<div class="single-slide-cast">
-										<img src="assets/img/cast/cast4.png" alt="about" />
-									</div>
-									<div class="single-slide-cast">
-										<img src="assets/img/cast/cast5.png" alt="about" />
-									</div>
-									<div class="single-slide-cast">
-										<img src="assets/img/cast/cast6.png" alt="about" />
-									</div>
-									<div class="single-slide-cast">
-										<img src="assets/img/cast/cast7.png" alt="about" />
-									</div>
-									<div class="single-slide-cast text-center">
-										5+
-									</div>
-								</div>
-								<div class="slide-trailor">
-									<h3>Watch Trailer</h3>
-									<a class="theme-btn theme-btn2" href="#"><i class="icofont icofont-play"></i> Tickets</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="thumb-next">
-					<div class="row hero-area-slide">
-						<div class="col-lg-6">
-							<div class="hero-area-content">
-								<img src="assets/img/slide1.png" alt="about" />
-							</div>
-						</div>
-						<div class="col-lg-6">
-							<div class="hero-area-content pr-50">
-								<h2>The Deer God</h2>
-								<div class="review">
-									<div class="author-review">
-										<i class="icofont icofont-star"></i>
-										<i class="icofont icofont-star"></i>
-										<i class="icofont icofont-star"></i>
-										<i class="icofont icofont-star"></i>
-										<i class="icofont icofont-star"></i>
-									</div>
-									<h4>180k voters</h4>
-								</div>
-								<p>She is a devil princess from the demon world. She grew up sheltered by her parents and doesn't really know how to be evil or any of the common actions, She is unable to cry due to Keita's accidental first wish, despite needed for him to wish...</p>
-								<h3>Cast:</h3>
-								<div class="slide-cast">
-									<div class="single-slide-cast">
-										<img src="assets/img/cast/cast1.png" alt="about" />
-									</div>
-									<div class="single-slide-cast">
-										<img src="assets/img/cast/cast2.php" alt="about" />
-									</div>
-									<div class="single-slide-cast">
-										<img src="assets/img/cast/cast3.png" alt="about" />
-									</div>
-									<div class="single-slide-cast">
-										<img src="assets/img/cast/cast4.png" alt="about" />
-									</div>
-									<div class="single-slide-cast">
-										<img src="assets/img/cast/cast5.png" alt="about" />
-									</div>
-									<div class="single-slide-cast">
-										<img src="assets/img/cast/cast6.png" alt="about" />
-									</div>
-									<div class="single-slide-cast">
-										<img src="assets/img/cast/cast7.png" alt="about" />
-									</div>
-									<div class="single-slide-cast text-center">
-										5+
-									</div>
-								</div>
-								<div class="slide-trailor">
-									<h3>Watch Trailer</h3>
-									<a class="theme-btn theme-btn2" href="#"><i class="icofont icofont-play"></i> Tickets</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+		</div>
 		</div>
 	</section><!-- hero area end -->
 	<!-- portfolio section start -->
