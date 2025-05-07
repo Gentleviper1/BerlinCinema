@@ -36,7 +36,7 @@
         <div class="card ">
             <div class="card-header text-center"><a href="../index.html"><img class="logo-img" src="../Views/Admin/assets/images/logo1.png" alt="logo"></a><span class="splash-description">Please enter your user information.</span></div>
             <div class="card-body">
-                <form>
+                <form id="formAuthentication" class="mb-3" action="login.php" method="POST">
                     <div class="form-group" >
                         <input class="form-control form-control-lg" id="username" type="text" placeholder="Username" autocomplete="off">
                     </div>
@@ -51,13 +51,11 @@
                     <button type="submit" class="btn btn-primary btn-lg btn-block">Sign in</button>
                 </form>
             </div>
-            <div class="card-footer bg-white p-0  ">
+        
                 <div class="card-footer-item card-footer-item-bordered">
                     <a href="#" class="footer-link">Create An Account</a></div>
-                <div class="card-footer-item card-footer-item-bordered">
-                    <a href="#" class="footer-link">Forgot Password</a>
-                </div>
-            </div>
+              
+          
         </div>
     </div>
   
