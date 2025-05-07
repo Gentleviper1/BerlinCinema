@@ -49,7 +49,6 @@
 						<button><i class="icofont icofont-search"></i></button>
 					</form>
 					<ul>
-						<li><a href="#">Welcome Guest!</a></li>
 						<li><a class="" href="../../Auth/login.php">Login</a></li>
 					</ul>
 				</div>
