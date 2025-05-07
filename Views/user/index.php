@@ -544,13 +544,13 @@
 						<div class="col-md-4 col-sm-6 soon released">
 							<div class="single-portfolio">
 								<div class="single-portfolio-img">
-									<img src="assets/img/Se7en_.jpg" alt="untilDawn.avif" />
+									<img src="assets/img/Se7en_.jpg" alt="se7en" />
 									<a href="https://www.youtube.com/watch?v=-cKyK1Zp-Lo?si=2THg_XLMcZiAAz-O" class="popup-youtube">
 										<i class="icofont icofont-ui-play"></i>
 									</a>
 								</div>
 								<div class="portfolio-content">
-									<h2>untilDawn</h2>
+									<h2>se7en</h2>
 									<div class="review">
 										<div class="author-review">
 											<i class="icofont icofont-star"></i>
@@ -705,12 +705,12 @@
 			<div class="row">
 				<div class="col-md-8">
 					<div class="video-area">
-						<img src="assets/img/SE7EN.jpg" alt="video" />
-						<a href="https://www.youtube.com/watch?v=-cKyK1Zp-Lo?si=2THg_XLMcZiAAz-O" class="popup-youtube">
+						<img src="assets/img/Thunderbolts.jpg" alt="video" />
+						<a href="https://www.youtube.com/watch?v=v-94Snw-H4o?si=sqy_HedNQFs_E5mQ" class="popup-youtube">
 							<i class="icofont icofont-ui-play"></i>
 						</a>
 						<div class="video-text">
-							<h2>Se7en</h2>
+							<h2>Thunderbolts</h2>
 							<div class="review">
 								<div class="author-review">
 									<i class="icofont icofont-star"></i>
@@ -762,22 +762,23 @@
 		<div class="news-slide-area">
 			<div class="news-slider">
 				<div class="single-news">
-					<div class="news-bg-1"></div>
+					<div class="news-bg-4">
+					</div>
 					<div class="news-date">
-						<h2><span>NOV</span> 25</h2>
-						<h1>2017</h1>
+						<h2><span>NOV</span> 11</h2>
+						<h1>2025</h1>
 					</div>
 					<div class="news-content">
 						<h2>Extraction</h2>
-						<p>Comming soon !.</p>
+						<p>Comming soon !</p>
 					</div>
 					<a href="#">Read More</a>
 				</div>
 				<div class="single-news">
 					<div class="news-bg-2"></div>
 					<div class="news-date">
-						<h2><span>NOV</span> 25</h2>
-						<h1>2017</h1>
+						<h2><span>AUG</span> 25</h2>
+						<h1>2025</h1>
 					</div>
 					<div class="news-content">
 						<h2>The Witch Queen</h2>
@@ -788,8 +789,8 @@
 				<div class="single-news">
 					<div class="news-bg-3"></div>
 					<div class="news-date">
-						<h2><span>NOV</span> 25</h2>
-						<h1>2017</h1>
+						<h2><span>NoV</span> 25</h2>
+						<h1>2025</h1>
 					</div>
 					<div class="news-content">
 						<h2>The Witch Queen</h2>
@@ -803,8 +804,8 @@
 					<div class="single-news">
 						<div class="news-bg-3"></div>
 						<div class="news-date">
-							<h2><span>NOV</span> 25</h2>
-							<h1>2017</h1>
+							<h2><span>DEC</span> 12</h2>
+							<h1>2025</h1>
 						</div>
 						<div class="news-content">
 							<h2>The Witch Queen</h2>
@@ -818,7 +819,7 @@
 						<div class="news-bg-2"></div>
 						<div class="news-date">
 							<h2><span>NOV</span> 25</h2>
-							<h1>2017</h1>
+							<h1>2025</h1>
 						</div>
 						<div class="news-content">
 							<h2>The Witch Queen</h2>
