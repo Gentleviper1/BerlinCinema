@@ -769,8 +769,8 @@
 						<h1>2017</h1>
 					</div>
 					<div class="news-content">
-						<h2>The Witch Queen</h2>
-						<p>Witch Queen is a tall woman with a slim build. She has pink hair, which is pulled up under her hat, and teal eyes.</p>
+						<h2>Extraction</h2>
+						<p>Comming soon !.</p>
 					</div>
 					<a href="#">Read More</a>
 				</div>
