@@ -5,7 +5,7 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Moviepoint - Online Movie,Vedio and TV Show HTML Template</title>
+		<title>Moviepoint - Online Movie,Vedio and TV Show php Template</title>
 		<!-- Favicon Icon -->
 		<link rel="icon" type="image/png" href="assets/img/favcion.png" />
 		<!-- Bootstrap CSS -->
@@ -23,7 +23,7 @@
 		<!-- Responsive CSS -->
 		<link rel="stylesheet" type="text/css" href="assets/css/responsive.css" media="all" />
 		<!--[if lt IE 9]>
-		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/php5shiv/3.7.3/php5shiv.min.js"></script>
 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
 	</head>
@@ -35,7 +35,7 @@
 			<div class="container">
 				<div class="header-area">
 					<div class="logo">
-						<a href="index-2.html"><img src="assets/img/logo.png" alt="logo" /></a>
+						<a href="index.php"><img src="assets/img/logo.png" alt="logo" /></a>
 					</div>
 					<div class="header-right">
 						<form action="#">
@@ -56,15 +56,15 @@
 						<div class="responsive-menu"></div>
 					    <div class="mainmenu">
                             <ul id="primary-menu">
-                                <li><a class="active" href="index-2.html">Home</a></li>
-                                <li><a href="movies.html">Movies</a></li>
-                                <li><a href="celebrities.html">CelebritiesList</a></li>
-                                <li><a href="top-movies.html">Top Movies</a></li>
-                                <li><a href="blog.html">News</a></li>
+                                <li><a class="active" href="index.php">Home</a></li>
+                                <li><a href="movies.php">Movies</a></li>
+                                <li><a href="celebrities.php">CelebritiesList</a></li>
+                                <li><a href="top-movies.php">Top Movies</a></li>
+                                <li><a href="blog.php">News</a></li>
 								<li><a class="active" href="#">Pages <i class="icofont icofont-simple-down"></i></a>
 									<ul>
-										<li><a href="blog-details.html">Blog Details</a></li>
-										<li><a class="active" href="movie-details.html">Movie Details</a></li>
+										<li><a href="blog-details.php">Blog Details</a></li>
+										<li><a class="active" href="movie-details.php">Movie Details</a></li>
 									</ul>
 								</li>
                                 <li><a class="theme-btn" href="#"><i class="icofont icofont-ticket"></i> Tickets</a></li>
@@ -484,7 +484,7 @@
 							</div>
 							<div class="details-comment">
 								<a class="theme-btn theme-btn2" href="#">Post Comment</a>
-								<p>You may use these HTML tags and attributes: You may use these HTML tags and attributes: You may use these HTML tags and attributes: </p>
+								<p>You may use these php tags and attributes: You may use these php tags and attributes: You may use these php tags and attributes: </p>
 							</div>
 							<div class="details-thumb">
 								<div class="details-thumb-prev">
