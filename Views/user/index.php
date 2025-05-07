@@ -703,14 +703,14 @@
 			</div>
 			<hr />
 			<div class="row">
-				<div class="col-md-8">
+				<div class="col-md-9">
 					<div class="video-area">
-						<img src="assets/img/SE7EN.jpg" alt="video" />
+						<img src="assets/img/extraction.jpeg" alt="video" />
 						<a href="https://www.youtube.com/watch?v=-cKyK1Zp-Lo?si=2THg_XLMcZiAAz-O" class="popup-youtube">
 							<i class="icofont icofont-ui-play"></i>
 						</a>
 						<div class="video-text">
-							<h2>Se7en</h2>
+							<h2>Extraction</h2>
 							<div class="review">
 								<div class="author-review">
 									<i class="icofont icofont-star"></i>
