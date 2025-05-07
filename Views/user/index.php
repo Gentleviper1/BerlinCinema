@@ -704,14 +704,14 @@
 			</div>
 			<hr />
 			<div class="row">
-				<div class="col-md-9">
+				<div class="col-md-8">
 					<div class="video-area">
-						<img src="assets/img/video/video1.png" alt="video" />
-						<a href="https://www.youtube.com/watch?v=RZXnugbhw_4" class="popup-youtube">
+						<img src="assets/img/SE7EN.jpg" alt="video" />
+						<a href="https://youtu.be/UKgMoL2JQ0I?si=H26824fjcBrjSZwE" >
 							<i class="icofont icofont-ui-play"></i>
 						</a>
 						<div class="video-text">
-							<h2>Angle of Death</h2>
+							<h2>Se7en</h2>
 							<div class="review">
 								<div class="author-review">
 									<i class="icofont icofont-star"></i>
@@ -729,16 +729,16 @@
 					<div class="row">
 						<div class="col-md-12 col-sm-6">
 							<div class="video-area">
-								<img src="assets/img/video/video2.png" alt="video" />
-								<a href="https://www.youtube.com/watch?v=RZXnugbhw_4" class="popup-youtube">
+								<img src="assets/img/El-Hana-El-Ana-Fe.jpg" alt="video" />
+								<a href="https://youtu.be/IwxgO_rrySk?si=L-ifuR0aLFLXlDbn4" class="popup-youtube">
 									<i class="icofont icofont-ui-play"></i>
 								</a>
 							</div>
 						</div>
-						<div class="col-md-12 col-sm-6">
+						<div class="col-md-10 col-sm-4">
 							<div class="video-area">
-								<img src="assets/img/video/video3.png" alt="video" />
-								<a href="https://www.youtube.com/watch?v=RZXnugbhw_4" class="popup-youtube">
+								<img src="assets/img/the Wolverine.jpeg" alt="video" />
+								<a href="https://youtu.be/u1VCP3O8wG0?si=qzTF0VPLCyb6xNMK" class="popup-youtube">
 									<i class="icofont icofont-ui-play"></i>
 								</a>
 							</div>
