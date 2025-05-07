@@ -544,18 +544,17 @@
 						<div class="col-md-4 col-sm-6 soon released">
 							<div class="single-portfolio">
 								<div class="single-portfolio-img">
-									<img src="assets/img/Se7en_.jpg" alt="portfolio" />
-									<a href="https://www.youtube.com/watch?v=-cKyK1Zp-Lo?si=2THg_XLMcZiAAz-O" class="popup-youtube">
+									<img src="assets/img/Se7en_.jpg" alt="untilDawn.avif" />
+									<a href="https://www.youtube.com/watch?v=SK-sJKY0pRU?si=orzScXJacRL0IE5t" class="popup-youtube">
 										<i class="icofont icofont-ui-play"></i>
 									</a>
 								</div>
 								<div class="portfolio-content">
-									<h2>Se7en</h2>
+									<h2>untilDawn</h2>
 									<div class="review">
 										<div class="author-review">
 											<i class="icofont icofont-star"></i>
 											<i class="icofont icofont-star"></i>
-
 											<i class="icofont icofont-star"></i>
 											<i class="icofont icofont-star"></i>
 										</div>
@@ -567,13 +566,13 @@
 						<div class="col-md-4 col-sm-6 top">
 							<div class="single-portfolio">
 								<div class="single-portfolio-img">
-									<img src="assets/img/The Wolverine.jpeg" alt="portfolio" />
-									<a href="https://www.youtube.com/watch?v=u1VCP3O8wG0?si=41QMR8JV5Swoecwz" class="popup-youtube">
+									<img src="assets/img/WolfMan.avif" alt="WolfMan" />
+									<a href="https://www.youtube.com/watch?v=kAw4PH2IQgo?si=14u6_eOuPcmarEeP" class="popup-youtube">
 										<i class="icofont icofont-ui-play"></i>
 									</a>
 								</div>
 								<div class="portfolio-content">
-									<h2>The Wolverine</h2>
+									<h2>WolfMan</h2>
 									<div class="review">
 										<div class="author-review">
 											<i class="icofont icofont-star"></i>
@@ -707,7 +706,7 @@
 				<div class="col-md-8">
 					<div class="video-area">
 						<img src="assets/img/SE7EN.jpg" alt="video" />
-						<a href="https://youtu.be/UKgMoL2JQ0I?si=H26824fjcBrjSZwE" >
+						<a href="https://www.youtube.com/watch?v=-cKyK1Zp-Lo?si=2THg_XLMcZiAAz-O" class="popup-youtube">
 							<i class="icofont icofont-ui-play"></i>
 						</a>
 						<div class="video-text">
@@ -730,7 +729,7 @@
 						<div class="col-md-12 col-sm-6">
 							<div class="video-area">
 								<img src="assets/img/El-Hana-El-Ana-Fe.jpg" alt="video" />
-								<a href="https://youtu.be/IwxgO_rrySk?si=L-ifuR0aLFLXlDbn4" class="popup-youtube">
+								<a href="https://www.youtube.com/watch?v=IwxgO_rrySk?si=L-ifuR0aLFLXlDbn4" class="popup-youtube">
 									<i class="icofont icofont-ui-play"></i>
 								</a>
 							</div>
@@ -738,7 +737,7 @@
 						<div class="col-md-10 col-sm-4">
 							<div class="video-area">
 								<img src="assets/img/the Wolverine.jpeg" alt="video" />
-								<a href="https://youtu.be/u1VCP3O8wG0?si=qzTF0VPLCyb6xNMK" class="popup-youtube">
+								<a href="https://www.youtube.com/watch?v=u1VCP3O8wG0?si=qzTF0VPLCyb6xNMK" class="popup-youtube">
 									<i class="icofont icofont-ui-play"></i>
 								</a>
 							</div>
