@@ -544,22 +544,22 @@
 						<div class="col-md-4 col-sm-6 soon released">
 							<div class="single-portfolio">
 								<div class="single-portfolio-img">
-									<img src="assets/img/portfolio/portfolio1.png" alt="portfolio" />
-									<a href="https://www.youtube.com/watch?v=RZXnugbhw_4" class="popup-youtube">
+									<img src="assets/img/Se7en_.jpg" alt="portfolio" />
+									<a href="https://www.youtube.com/watch?v=-cKyK1Zp-Lo?si=2THg_XLMcZiAAz-O" class="popup-youtube">
 										<i class="icofont icofont-ui-play"></i>
 									</a>
 								</div>
 								<div class="portfolio-content">
-									<h2>Boyz II Men</h2>
+									<h2>Se7en</h2>
 									<div class="review">
 										<div class="author-review">
 											<i class="icofont icofont-star"></i>
 											<i class="icofont icofont-star"></i>
-											<i class="icofont icofont-star"></i>
+
 											<i class="icofont icofont-star"></i>
 											<i class="icofont icofont-star"></i>
 										</div>
-										<h4>180k voters</h4>
+										<h4>150k voters</h4>
 									</div>
 								</div>
 							</div>
@@ -567,22 +567,22 @@
 						<div class="col-md-4 col-sm-6 top">
 							<div class="single-portfolio">
 								<div class="single-portfolio-img">
-									<img src="assets/img/portfolio/portfolio2.png" alt="portfolio" />
-									<a href="https://www.youtube.com/watch?v=RZXnugbhw_4" class="popup-youtube">
+									<img src="assets/img/The Wolverine.jpeg" alt="portfolio" />
+									<a href="https://www.youtube.com/watch?v=u1VCP3O8wG0?si=41QMR8JV5Swoecwz" class="popup-youtube">
 										<i class="icofont icofont-ui-play"></i>
 									</a>
 								</div>
 								<div class="portfolio-content">
-									<h2>Tale of Revemge</h2>
+									<h2>The Wolverine</h2>
 									<div class="review">
 										<div class="author-review">
 											<i class="icofont icofont-star"></i>
 											<i class="icofont icofont-star"></i>
 											<i class="icofont icofont-star"></i>
 											<i class="icofont icofont-star"></i>
-											<i class="icofont icofont-star"></i>
+
 										</div>
-										<h4>180k voters</h4>
+										<h4>190k voters</h4>
 									</div>
 								</div>
 							</div>
@@ -590,13 +590,13 @@
 						<div class="col-md-4 col-sm-6 soon">
 							<div class="single-portfolio">
 								<div class="single-portfolio-img">
-									<img src="assets/img/portfolio/portfolio3.png" alt="portfolio" />
-									<a href="https://www.youtube.com/watch?v=RZXnugbhw_4" class="popup-youtube">
+									<img src="assets/img/mufasa.jpg" alt="mufasa" />
+									<a href="https://www.youtube.com/watch?v=o17MF9vnabg?si=bwW0mmlqW2_0bitz" class="popup-youtube">
 										<i class="icofont icofont-ui-play"></i>
 									</a>
 								</div>
 								<div class="portfolio-content">
-									<h2>The Lost City of Z</h2>
+									<h2>mufasa</h2>
 									<div class="review">
 										<div class="author-review">
 											<i class="icofont icofont-star"></i>
@@ -613,13 +613,13 @@
 						<div class="col-md-4 col-sm-6 top released">
 							<div class="single-portfolio">
 								<div class="single-portfolio-img">
-									<img src="assets/img/portfolio/portfolio4.png" alt="portfolio" />
-									<a href="https://www.youtube.com/watch?v=RZXnugbhw_4" class="popup-youtube">
+									<img src="assets/img/The Brutalist.avif" alt="The Brutalist" />
+									<a href="https://www.youtube.com/watch?v=GdRXPAHIEW4?si=lp2JbOTiaahU-Y0m" class="popup-youtube">
 										<i class="icofont icofont-ui-play"></i>
 									</a>
 								</div>
 								<div class="portfolio-content">
-									<h2>Beast Beauty</h2>
+									<h2>The Brutalist</h2>
 									<div class="review">
 										<div class="author-review">
 											<i class="icofont icofont-star"></i>
@@ -636,13 +636,13 @@
 						<div class="col-md-4 col-sm-6 released">
 							<div class="single-portfolio">
 								<div class="single-portfolio-img">
-									<img src="assets/img/portfolio/portfolio5.png" alt="portfolio" />
-									<a href="https://www.youtube.com/watch?v=RZXnugbhw_4" class="popup-youtube">
+									<img src="assets/img/Presence.avif" alt="portfolio" />
+									<a href="https://www.youtube.com/watch?v=XfSNmYhV8Xc?si=GNAvQmE1pxWsyt_I" class="popup-youtube">
 										<i class="icofont icofont-ui-play"></i>
 									</a>
 								</div>
 								<div class="portfolio-content">
-									<h2>In The Fade</h2>
+									<h2>Presence</h2>
 									<div class="review">
 										<div class="author-review">
 											<i class="icofont icofont-star"></i>
@@ -651,7 +651,7 @@
 											<i class="icofont icofont-star"></i>
 											<i class="icofont icofont-star"></i>
 										</div>
-										<h4>180k voters</h4>
+										<h4>140k voters</h4>
 									</div>
 								</div>
 							</div>
@@ -659,13 +659,13 @@
 						<div class="col-md-4 col-sm-6 soon top">
 							<div class="single-portfolio">
 								<div class="single-portfolio-img">
-									<img src="assets/img/portfolio/portfolio6.png" alt="portfolio" />
-									<a href="https://www.youtube.com/watch?v=RZXnugbhw_4" class="popup-youtube">
+									<img src="assets/img/DogMAN.jpg" alt="DogMAN" />
+									<a href="https://www.youtube.com/watch?v=QaJbAennB_Q?si=c3cSy3w15-5At0nq" class="popup-youtube">
 										<i class="icofont icofont-ui-play"></i>
 									</a>
 								</div>
 								<div class="portfolio-content">
-									<h2>Last Hero</h2>
+									<h2>DogMAN</h2>
 									<div class="review">
 										<div class="author-review">
 											<i class="icofont icofont-star"></i>
@@ -674,7 +674,7 @@
 											<i class="icofont icofont-star"></i>
 											<i class="icofont icofont-star"></i>
 										</div>
-										<h4>180k voters</h4>
+										<h4>100k voters</h4>
 									</div>
 								</div>
 							</div>
