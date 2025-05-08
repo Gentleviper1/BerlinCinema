@@ -211,18 +211,18 @@
 					<div class="responsive-menu"></div>
 					<div class="mainmenu">
 						<ul id="primary-menu">
-							<li><a href="index.php">Home</a></li>
+							<li><a href="index-2.php">Home</a></li>
 							<li><a class="active" href="movies.php">Movies</a></li>
-							<li><a href="celebrities.php">CelebritiesList</a></li>
-							<li><a href="top-movies.php">Top Movies</a></li>
-							<li><a href="blog.php">News</a></li>
+							<li><a href="showtimese.php">showtimes</a></li>
+							<li><a href="profile.php">profile</a></li>
+							<li><a href="blog-2.php">News</a></li>
 							<li><a href="#">Pages <i class="icofont icofont-simple-down"></i></a>
 								<ul>
-									<li><a href="blog-details.php">Blog Details</a></li>
-									<li><a href="movie-details.php">Movie Details</a></li>
+									<li><a href="blog-details-2.php">Blog Details</a></li>
+									<li><a href="movies-details-2.php">Movie Details</a></li>
 								</ul>
 							</li>
-							<li><a class="theme-btn" href=""><i class="icofont icofont-ticket"></i> Tickets</a></li>
+							<li><a class="theme-btn" href="tickets.php"><i class="icofont icofont-ticket"></i> Tickets</a></li>
 						</ul>
 					</div>
 				</div>
