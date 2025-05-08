@@ -360,7 +360,7 @@
 							<p>Dog Man, half dog and half man, he is sworn to protect and serve as he doggedly pursues the feline supervillain Petey the Cat....</p>
 
 							<div class="slide-trailor">
-								<h3>Watch Trailer</h3>
+								<h3>BOOK NOW !</h3>
 								<a class="theme-btn theme-btn2" href="#"><i class="icofont icofont-play"></i> Tickets</a>
 							</div>
 						</div>
@@ -388,7 +388,7 @@
 							<p>The Wolverine is a 2013 superhero film featuring the Marvel Comics character Wolverine. It is the sixth installment in the X-Men film series, the second installment in the trilogy of Wolverine films after X-Men Origins: Wolverine (2009), and a spin-off/sequel to X-Men: The Last Stand (2006)</p>
 
 							<div class="slide-trailor">
-								<h3>Watch Trailer</h3>
+								<h3>BOOK NOW !</h3>
 								<a class="theme-btn theme-btn2" href="#"><i class="icofont icofont-play"></i> Tickets</a>
 							</div>
 						</div>
@@ -416,7 +416,7 @@
 							<p>Seven (often stylized as Se7en)[1] is a 1995 American crime thriller film directed by David Fincher and written by Andrew Kevin Walker. It stars Brad Pitt and Morgan Freeman, with Gwyneth Paltrow and John C. McGinley in supporting roles. Set in an unnamed, crime-ridden city, Seven's narrative follows disenchanted, nearly retired Detective Lieutenant William Somerset (Freeman) and his newly transferred partner David Mills (Pitt) as they try to stop a serial killer from committing a series of murders based on the seven deadly sins...</p>
 
 							<div class="slide-trailor">
-								<h3>Watch Trailer</h3>
+								<h3>BOOK NOW !</h3>
 								<a class="theme-btn theme-btn2" href="#"><i class="icofont icofont-play"></i> Tickets</a>
 							</div>
 						</div>
@@ -446,7 +446,7 @@
 
 						</div>
 						<div class="slide-trailor">
-							<h3>Watch Trailer</h3>
+							<h3>BOOK NOW !</h3>
 							<a class="theme-btn theme-btn2" href="#"><i class="icofont icofont-play"></i> Tickets</a>
 						</div>
 					</div>
@@ -477,7 +477,7 @@
 							<p>The Wolverine is a 2013 superhero film featuring the Marvel Comics character Wolverine. It is the sixth installment in the X-Men film series, the second installment in the trilogy of Wolverine films after X-Men Origins: Wolverine (2009), and a spin-off/sequel to X-Men: The Last Stand (2006). ...</p>
 
 							<div class="slide-trailor">
-								<h3>Watch Trailer</h3>
+								<h3>BOOK NOW !</h3>
 								<a class="theme-btn theme-btn2" href="#"><i class="icofont icofont-play"></i> Tickets</a>
 							</div>
 						</div>
@@ -507,7 +507,7 @@
 							<p>She is a devil princess from the demon world. She grew up sheltered by her parents and doesn't really know how to be evil or any of the common actions, She is unable to cry due to Keita's accidental first wish, despite needed for him to wish...</p>
 
 							<div class="slide-trailor">
-								<h3>Watch Trailer</h3>
+								<h3>BOOK NOW !</h3>
 								<a class="theme-btn theme-btn2" href="#"><i class="icofont icofont-play"></i> Tickets</a>
 							</div>
 						</div>
