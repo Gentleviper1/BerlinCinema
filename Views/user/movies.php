@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Moviepoint - Online Movie,Vedio and TV Show php Template</title>
+	<title>Moviepoint - Online Movie, Video and TV Show php Template</title>
 	<!-- Favicon Icon -->
 	<link rel="icon" type="image/png" href="assets/img/favcion.png" />
 	<!-- Bootstrap CSS -->
@@ -22,6 +22,161 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css" media="all" />
 	<!-- Responsive CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css" media="all" />
+	<style>
+		/* Rating Badge Styles */
+		.rating-badge {
+			position: absolute;
+			top: 15px;
+			right: 15px;
+			width: 30px;
+			height: 30px;
+			background: rgba(0, 0, 0, 0.7);
+			color: #fff;
+			border-radius: 4px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-weight: bold;
+			font-size: 14px;
+			border: 2px solid #fff;
+			z-index: 2;
+			text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+		}
+
+		/* Different colors for different ratings */
+		.rating-badge {
+			background: #e50914;
+			/* Netflix red for R ratings */
+			border-color: #e50914;
+		}
+
+		.rating-badge[data-rating="PG-13"] {
+			background: linear-gradient(135deg, #f5c518 0%, #e6a905 100%);
+			border-color: #d4a000;
+			color: #000;
+			text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3);
+			font-weight: 800;
+			width: 34px;
+			font-size: 12px;
+			letter-spacing: -0.5px;
+		}
+
+		.rating-badge[data-rating="PG"] {
+			background: #00a878;
+			border-color: #00a878;
+		}
+
+		.rating-badge[data-rating="G"] {
+			background: #0096ff;
+			border-color: #0096ff;
+		}
+
+		/* Movie Meta Information Styles */
+		.movie-meta {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background: rgba(0, 0, 0, 0.7);
+			padding: 10px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			color: #fff;
+			font-size: 12px;
+			transition: all 0.3s ease;
+		}
+
+		.single-portfolio:hover .movie-meta {
+			background: rgba(0, 0, 0, 0.9);
+		}
+
+		.movie-meta span {
+			display: inline-flex;
+			align-items: center;
+			margin: 2px 0;
+			padding: 2px 5px;
+			border-radius: 3px;
+			background: rgba(255, 255, 255, 0.1);
+		}
+
+		.movie-meta i {
+			margin-right: 5px;
+			color: #e4d804;
+		}
+
+		.duration {
+			color: #fff;
+		}
+
+		.genre {
+			color: #e4d804;
+			font-weight: 500;
+		}
+
+		.release-date {
+			background: #e4d804 !important;
+			color: #000;
+			font-weight: bold;
+		}
+
+		/* Ticket Button Styles */
+		.ticket-btn {
+			display: block;
+			width: 100%;
+			text-align: center;
+			margin: 15px auto 0;
+			padding: 8px 15px;
+			font-size: 14px;
+			background: #e4d804;
+			color: #000;
+			border: none;
+			transition: all 0.3s ease;
+			border-radius: 4px;
+		}
+
+		.ticket-btn:hover {
+			background: #f5e642;
+			color: #000;
+			transform: translateY(-2px);
+			box-shadow: 0 5px 15px rgba(228, 216, 4, 0.3);
+		}
+
+		.ticket-btn i {
+			margin-right: 5px;
+		}
+
+		/* Center the button container */
+		.portfolio-content {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		/* Hover effect */
+		.single-portfolio:hover .rating-badge {
+			transform: scale(1.1);
+			transition: transform 0.3s ease;
+		}
+
+		/* Responsive adjustments */
+		@media (max-width: 767px) {
+			.movie-meta {
+				font-size: 10px;
+				padding: 5px;
+			}
+
+			.movie-meta span {
+				padding: 1px 3px;
+			}
+
+			.ticket-btn {
+				padding: 6px 10px;
+				font-size: 12px;
+			}
+		}
+	</style>
 	<!--[if lt IE 9]>
 		  <script src="https://oss.maxcdn.com/php5shiv/3.7.3/php5shiv.min.js"></script>
 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -49,7 +204,6 @@
 						<button><i class="icofont icofont-search"></i></button>
 					</form>
 					<ul>
-				
 						<li><a class="" href="../../Auth/login.php">Login</a></li>
 					</ul>
 				</div>
@@ -101,7 +255,6 @@
 					<a href="#"><i class="icofont icofont-camera"></i></a>
 				</div>
 			</form>
-
 		</div>
 	</div>
 	<div class="buy-ticket">
@@ -340,7 +493,7 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="breadcrumb-area-content">
-						<h1>Welcome to Berline</h1>
+						<h1>Welcome to Cinema Berlin</h1>
 					</div>
 				</div>
 			</div>
@@ -359,7 +512,7 @@
 					<div class="portfolio-menu">
 						<ul>
 							<li data-filter="*" class="active">Latest</li>
-							<li data-filter=".soon">Comming Soon</li>
+							<li data-filter=".soon">Coming Soon</li>
 							<li data-filter=".top">Top Rated</li>
 							<li data-filter=".released">Recently Released</li>
 						</ul>
@@ -368,17 +521,23 @@
 			</div>
 			<hr />
 			<div class="row portfolio-item">
+				<!-- The Godfather -->
 				<div class="col-lg-3 col-md-4 col-sm-6 soon released">
 					<div class="single-portfolio">
 						<div class="single-portfolio-img">
-							<img src="assets/img/The God Father.jpg" alt="portfolio" />
+							<img src="assets/img/The God Father.jpg" alt="The Godfather" />
+							<div class="rating-badge">R</div>
 							<a href="https://www.youtube.com/watch?v=UaVTIH8mujA?si=Kl5I_WRov0m2JlcO" class="popup-youtube">
 								<i class="icofont icofont-ui-play"></i>
 							</a>
-							
+							<div class="movie-meta">
+								<span class="duration"><i class="icofont icofont-clock-time"></i> 2h 55m</span>
+								<span class="genre">Crime, Drama</span>
+								<span class="release-date">1972</span>
+							</div>
 						</div>
 						<div class="portfolio-content">
-							<h2>The GodFather</h2>
+							<h4>The Godfather</h4>
 							<div class="review">
 								<div class="author-review">
 									<i class="icofont icofont-star"></i>
@@ -389,19 +548,28 @@
 								</div>
 								<h4>180k voters</h4>
 							</div>
+							<a href="#" class="theme-btn "><i class="icofont icofont-ticket"></i> Get Ticket</a>
 						</div>
 					</div>
 				</div>
+
+				<!-- The Wolverine -->
 				<div class="col-lg-3 col-md-4 col-sm-6 top">
 					<div class="single-portfolio">
 						<div class="single-portfolio-img">
-						<img src="assets/img/the Wolverine.jpeg" alt="portfolio" />
+							<img src="assets/img/the Wolverine.jpeg" alt="The Wolverine" />
+							<div class="rating-badge">PG-13</div>
 							<a href="https://www.youtube.com/watch?v=u1VCP3O8wG0?si=qzTF0VPLCyb6xNMK" class="popup-youtube">
 								<i class="icofont icofont-ui-play"></i>
 							</a>
+							<div class="movie-meta">
+								<span class="duration"><i class="icofont icofont-clock-time"></i> 2h 6m</span>
+								<span class="genre">Action, Sci-Fi</span>
+								<span class="release-date">2013</span>
+							</div>
 						</div>
 						<div class="portfolio-content">
-							<h2>The Walverine</h2>
+							<h4>The Wolverine</h4>
 							<div class="review">
 								<div class="author-review">
 									<i class="icofont icofont-star"></i>
@@ -412,21 +580,28 @@
 								</div>
 								<h4>200k voters</h4>
 							</div>
+							<a href="#" class="theme-btn "><i class="icofont icofont-ticket"></i> Get Ticket</a>
 						</div>
 					</div>
 				</div>
+
+				<!-- Silence of the Lambs -->
 				<div class="col-lg-3 col-md-4 col-sm-6 soon">
 					<div class="single-portfolio">
 						<div class="single-portfolio-img">
-							<img src="assets/img/scilenceOfTheLambs.webp" alt="portfolio" />
+							<img src="assets/img/scilenceOfTheLambs.webp" alt="Silence of the Lambs" />
+							<div class="rating-badge">R</div>
 							<a href="https://www.youtube.com/watch?v=6iB21hsprAQ?si=9XixT2sz1OIQZqLc" class="popup-youtube">
 								<i class="icofont icofont-ui-play"></i>
-							
 							</a>
-						
+							<div class="movie-meta">
+								<span class="duration"><i class="icofont icofont-clock-time"></i> 1h 58m</span>
+								<span class="genre">Crime, Thriller</span>
+								<span class="release-date">1991</span>
+							</div>
 						</div>
 						<div class="portfolio-content">
-							<h2>Silence of the lambs</h2>
+							<h4>Silence of the Lambs</h4>
 							<div class="review">
 								<div class="author-review">
 									<i class="icofont icofont-star"></i>
@@ -437,20 +612,28 @@
 								</div>
 								<h4>130k voters</h4>
 							</div>
+							<a href="#" class="theme-btn "><i class="icofont icofont-ticket"></i> Get Ticket</a>
 						</div>
 					</div>
 				</div>
+
+				<!-- Until Dawn -->
 				<div class="col-lg-3 col-md-4 col-sm-6 top released">
 					<div class="single-portfolio">
 						<div class="single-portfolio-img">
-							<img src="assets/img/Until_dawn_movie.jpg" alt="portfolio" />
+							<img src="assets/img/Until_dawn_movie.jpg" alt="Until Dawn" />
+							<div class="rating-badge">R</div>
 							<a href="https://www.youtube.com/watch?v=2b3vBaINZ7w?si=yfP26QMgMLAmWp6p" class="popup-youtube">
 								<i class="icofont icofont-ui-play"></i>
-								
 							</a>
+							<div class="movie-meta">
+								<span class="duration"><i class="icofont icofont-clock-time"></i> 1h 45m</span>
+								<span class="genre">Horror, Interactive</span>
+								<span class="release-date">2024</span>
+							</div>
 						</div>
 						<div class="portfolio-content">
-							<h2>Until down </h2>
+							<h4>Until Dawn</h4>
 							<div class="review">
 								<div class="author-review">
 									<i class="icofont icofont-star"></i>
@@ -461,21 +644,28 @@
 								</div>
 								<h4>236k voters</h4>
 							</div>
+							<a href="#" class="theme-btn "><i class="icofont icofont-ticket"></i> Get Ticket</a>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-3 col-md-4 col-sm-3 released">
+
+				<!-- The Amateur -->
+				<div class="col-lg-3 col-md-4 col-sm-6 released">
 					<div class="single-portfolio">
 						<div class="single-portfolio-img">
-							<img src="assets/img/The amateur.jpg" alt="portfolio" />
+							<img src="assets/img/The amateur.jpg" alt="The Amateur" />
+							<div class="rating-badge">PG-13</div>
 							<a href="https://www.youtube.com/watch?v=DCWcK4c-F8Q?si=vRiyuZhyt7sHquEW" class="popup-youtube">
 								<i class="icofont icofont-ui-play"></i>
-								
 							</a>
-							
+							<div class="movie-meta">
+								<span class="duration"><i class="icofont icofont-clock-time"></i> 1h 52m</span>
+								<span class="genre">Action, Thriller</span>
+								<span class="release-date">2024</span>
+							</div>
 						</div>
 						<div class="portfolio-content">
-							<h2>The Amateur</h2>
+							<h4>The Amateur</h4>
 							<div class="review">
 								<div class="author-review">
 									<i class="icofont icofont-star"></i>
@@ -486,19 +676,28 @@
 								</div>
 								<h4>335k voters</h4>
 							</div>
+							<a href="#" class="theme-btn "><i class="icofont icofont-ticket"></i> Get Ticket</a>
 						</div>
 					</div>
 				</div>
+
+				<!-- Lucy 2 -->
 				<div class="col-lg-3 col-md-4 col-sm-6 soon top">
 					<div class="single-portfolio">
 						<div class="single-portfolio-img">
-							<img src="assets/img/Lucy2.jpg" alt="portfolio" />
+							<img src="assets/img/Lucy2.jpg" alt="Lucy 2" />
+							<div class="rating-badge">R</div>
 							<a href="https://www.youtube.com/watch?v=deMHi69NA1Q?si=trrN7Z-eQIhyZDSV" class="popup-youtube">
 								<i class="icofont icofont-ui-play"></i>
 							</a>
+							<div class="movie-meta">
+								<span class="duration"><i class="icofont icofont-clock-time"></i> 1h 49m</span>
+								<span class="genre">Sci-Fi, Action</span>
+								<span class="release-date">2024</span>
+							</div>
 						</div>
 						<div class="portfolio-content">
-							<h2>Lucy 2</h2>
+							<h4>Lucy 2</h4>
 							<div class="review">
 								<div class="author-review">
 									<i class="icofont icofont-star"></i>
@@ -509,19 +708,28 @@
 								</div>
 								<h4>270k voters</h4>
 							</div>
+							<a href="#" class="theme-btn "><i class="icofont icofont-ticket"></i> Get Ticket</a>
 						</div>
 					</div>
 				</div>
+
+				<!-- Unstoppable 2 -->
 				<div class="col-lg-3 col-md-4 col-sm-6 soon">
 					<div class="single-portfolio">
 						<div class="single-portfolio-img">
-							<img src="assets/img/unstoppable2.jpg" alt="portfolio" />
+							<img src="assets/img/unstoppable2.jpg" alt="Unstoppable 2" />
+							<div class="rating-badge">PG-13</div>
 							<a href="https://www.youtube.com/watch?v=fxEEdR2ZTDw?si=Yzde-LuKXvRqdtJR" class="popup-youtube">
 								<i class="icofont icofont-ui-play"></i>
 							</a>
+							<div class="movie-meta">
+								<span class="duration"><i class="icofont icofont-clock-time"></i> 1h 38m</span>
+								<span class="genre">Action, Thriller</span>
+								<span class="release-date">2024</span>
+							</div>
 						</div>
 						<div class="portfolio-content">
-							<h2>Unstoppable 2</h2>
+							<h4>Unstoppable 2</h4>
 							<div class="review">
 								<div class="author-review">
 									<i class="icofont icofont-star"></i>
@@ -532,19 +740,28 @@
 								</div>
 								<h4>360k voters</h4>
 							</div>
+							<a href="#" class="theme-btn "><i class="icofont icofont-ticket"></i> Get Ticket</a>
 						</div>
 					</div>
 				</div>
+
+				<!-- Extraction 3 -->
 				<div class="col-lg-3 col-md-4 col-sm-6 top released">
 					<div class="single-portfolio">
 						<div class="single-portfolio-img">
-							<img src="assets/img/Extraction 3.jpg" alt="portfolio" />
+							<img src="assets/img/Extraction 3.jpg" alt="Extraction 3" />
+							<div class="rating-badge">R</div>
 							<a href="https://www.youtube.com/watch?v=O_pCN2xPjSc?si=gNOMYJndooyysDxn" class="popup-youtube">
 								<i class="icofont icofont-ui-play"></i>
 							</a>
+							<div class="movie-meta">
+								<span class="duration"><i class="icofont icofont-clock-time"></i> 2h 7m</span>
+								<span class="genre">Action, Thriller</span>
+								<span class="release-date">2024</span>
+							</div>
 						</div>
 						<div class="portfolio-content">
-							<h2>Extraction 3</h2>
+							<h4>Extraction 3</h4>
 							<div class="review">
 								<div class="author-review">
 									<i class="icofont icofont-star"></i>
@@ -555,16 +772,14 @@
 								</div>
 								<h4>150k voters</h4>
 							</div>
+							<a href="#" class="theme-btn "><i class="icofont icofont-ticket"></i> Get Ticket</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section><!-- portfolio section end -->
-	
-		
 
-	
 	<!-- footer section start -->
 	<footer class="footer">
 		<div class="container">
@@ -630,6 +845,7 @@
 		</div>
 	</footer><!-- footer section end -->
 	<!-- jquery main JS -->
+	<!-- jquery main JS -->
 	<script src="assets/js/jquery.min.js"></script>
 	<!-- Bootstrap JS -->
 	<script src="assets/js/bootstrap.min.js"></script>
@@ -644,4 +860,3 @@
 	<!-- main JS -->
 	<script src="assets/js/main.js"></script>
 </body>
-
