@@ -41,11 +41,11 @@
                 <div class="header-right">
                     <form action="#">
                         <select>
-                        <option value="Movies">Tittle</option>
-							<option value="Movies">Category</option>
-							<option value="Movies">Genre</option>
+                            <option value="Movies">Tittle</option>
+                            <option value="Movies">Category</option>
+                            <option value="Movies">Genre</option>
                         </select>
-                      
+
                         <input type="text" />
 
                     </form>
@@ -69,7 +69,7 @@
                                     <li><a href="movie-details-2.php">Movie Details</a></li>
                                 </ul>
                             </li>
-                            <li><a class="" href="tickets.php"><i class="icofont icofont-ticket"></i> Tickets</a></li>
+                            <a class="theme-btn " href="tickets.php"><i class="icofont icofont-ticket"></i> Book Now</a>
                         </ul>
                     </div>
                 </div>
@@ -79,7 +79,7 @@
 
     </div>
     </div>
-   <!--header section end -->
+    <!--header section end -->
     <!-- hero area start -->
     <section class="hero-area" id="home">
         <div class="container">
@@ -107,7 +107,7 @@
 
                             <div class="slide-trailor">
                                 <h3>BOOK NOW !</h3>
-                                <a class="theme-btn theme-btn2" href="#"><i class="icofont icofont-play"></i> Tickets</a>
+                                <a class="theme-btn theme-btn2" href="#"><i class="icofont icofont-play"></i>Get Tickets</a>
                             </div>
                         </div>
                     </div>
