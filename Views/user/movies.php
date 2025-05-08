@@ -213,7 +213,7 @@
 						<ul id="primary-menu">
 							<li><a href="index-2.php">Home</a></li>
 							<li><a class="active" href="movies.php">Movies</a></li>
-							<li><a href="showtimese.php">showtimes</a></li>
+							<li><a href="showtimes.php">showtimes</a></li>
 							<li><a href="profile.php">profile</a></li>
 							<li><a href="blog-2.php">News</a></li>
 							<li><a href="#">Pages <i class="icofont icofont-simple-down"></i></a>
@@ -236,7 +236,7 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="breadcrumb-area-content">
-						<h1>Welcome to Cinema Berlin</h1>
+						<h1>Welcome to Berlin Cinema</h1>
 					</div>
 				</div>
 			</div>

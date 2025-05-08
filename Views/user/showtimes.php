@@ -45,7 +45,7 @@
                         <button class="btn btn-primary"><i class="icofont icofont-search"></i></button>
                     </form>
                     <ul class="navbar-nav flex-row m-0 align-items-start" style="margin-top: -8px;">
-                        <li class="nav-item"><a class="nav-link" href="../../Auth/login.php">Login</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.php">Logout</a></li>
                     </ul>
                 </div>
                 <div class="menu-area">
@@ -57,19 +57,19 @@
                             </button>
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul id="primary-menu" class="navbar-nav me-auto mb-2 mb-lg-0">
-                                    <li class="nav-item"><a class="nav-link active" href="index.php">Home</a></li>
-                                   <!-- <li class="nav-item"><a class="nav-link" href="movies.php">Movies</a></li>-->
-                                    <li class="nav-item"><a class="nav-link" href="celebrities.php">CelebritiesList</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="top-movies.php">Top Movies</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="blog.php">News</a></li>
+                                    <li class="nav-item"><a class="nav-link active" href="index-2.php">Home</a></li>
+                                   <li class="nav-item"><a class="nav-link" href="movies.php">Movies</a></li>
+                                    <!-- <li class="nav-item"><a class="nav-link" href="celebrities.php"></a></li> -->
+                                    <!-- <li class="nav-item"><a class="nav-link" href="top-movies.php">Top Movies</a></li> -->
+                                    <li class="nav-item"><a class="nav-link" href="blog-2.php">News</a></li>
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
                                         <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
-                                            <li><a class="dropdown-item" href="blog-details.php">Blog Details</a></li>
-                                            <li><a class="dropdown-item" href="movie-details.php">Movie Details</a></li>
+                                            <li><a class="dropdown-item" href="blog-details-2.php">Blog Details</a></li>
+                                            <li><a class="dropdown-item" href="movie-details-2.php">Movie Details</a></li>
                                         </ul>
                                     </li>
-                                    <li class="nav-item"><a class="btn btn-theme" href="#"><i class="icofont icofont-ticket"></i> Tickets</a></li>
+                                    <li class="nav-item"><a class="btn btn-theme" href="tickets.php"><i class="icofont icofont-ticket"></i> Tickets</a></li>
                                 </ul>
                             </div>
                         </div>
