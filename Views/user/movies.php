@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="zxx">
+<html lang="en">
 
 <head>
 	<meta charset="UTF-8">
@@ -645,4 +645,3 @@
 	<script src="assets/js/main.js"></script>
 </body>
 
-</pht>
