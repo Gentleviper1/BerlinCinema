@@ -50,32 +50,33 @@
 					</form>
 					<ul>
 					
-						<li><a class="" href="../../Auth/login.php">Login</a></li>
+						<li><a class="" href="index.php">Logout</a></li>
 					</ul>
 				</div>
 				<div class="menu-area">
 					<div class="responsive-menu"></div>
 					<div class="mainmenu">
 						<ul id="primary-menu">
-							<li><a href="index.php">Home</a></li>
-							<!--<li><a href="movies.php">Movies</a></li>-->
-							<!-- <li><a href="celebrities.php">CelebritiesList</a></li> -->
-							<li><a href="top-movies.php">Top Movies</a></li>
-							<li><a class="active" href="blog.php">News</a></li>
+							<li><a href="index-2.php">Home</a></li>
+							<li><a href="movies.php">Movies</a></li>
+							<li><a href="showtimes-2.php">Showtimes</a></li>
+							<li><a href="profile.php">profile</a></li>
+							<li><a class="active" href="blog-2.php">News</a></li>
 							<li><a href="#">Pages <i class="icofont icofont-simple-down"></i></a>
 								<ul>
-									<li><a href="blog-details.php">Blog Details</a></li>
-									<li><a href="movie-details.php">Movie Details</a></li>
+									<li><a href="blog-details-2.php">Blog Details</a></li>
+									<li><a href="movie-details-2.php">Movie Details</a></li>
 								</ul>
 							</li>
-							<li><a class="theme-btn" href="#"><i class="icofont icofont-ticket"></i> Tickets</a></li>
+							<li><a class="theme-btn" href="tickets.php"><i class="icofont icofont-ticket"></i> Tickets</a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
 	</header>
-<!-- header section end -->
+	
+	<!-- header section end -->
 	<!-- breadcrumb area start -->
 	<section class="breadcrumb-area">
 		<div class="container">
@@ -87,7 +88,8 @@
 				</div>
 			</div>
 		</div>
-	</section><!-- breadcrumb area end -->
+	</section>
+    <!-- breadcrumb area end -->
 	<!-- blog area start -->
 	<section class="blog-area">
 		<div class="container">

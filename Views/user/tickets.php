@@ -49,7 +49,7 @@
                                     <li class="nav-item"><a class="nav-link active" href="index.php">Home</a></li>
                                     <li class="nav-item"><a class="nav-link" href="movies.php">Movies</a></li>
                                     <li class="nav-item"><a class="nav-link" href="celebrities.php">Celebrities List</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="top-movies.php">Top Movies</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="top-movies.php">Profile</a></li>
                                     <li class="nav-item"><a class="nav-link" href="blog.php">News</a></li>
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>

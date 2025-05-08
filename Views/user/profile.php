@@ -37,9 +37,9 @@
                 <div class="header-right d-flex align-items-center">
                     <form class="d-flex me-3" action="#">
                         <select class="form-select me-2" style="width: 120px;">
-                            <option value="Movies">Movies</option>
-                            <option value="Movies">Movies</option>
-                            <option value="Movies">Movies</option>
+                        <option value="Movies">Tittle</option>
+							<option value="Movies">Category</option>
+							<option value="Movies">Genre</option>
                         </select>
                         <input type="text" class="form-control me-2" placeholder="Search..." />
                         <button class="btn btn-primary"><i class="icofont icofont-search"></i></button>
@@ -58,7 +58,7 @@
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul id="primary-menu" class="navbar-nav me-auto mb-2 mb-lg-0">
                                     <li class="nav-item"><a class="nav-link active" href="index.php">Home</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="movies.php">Movies</a></li>
+                                  <!--  <li class="nav-item"><a class="nav-link" href="movies.php">Movies</a></li>-->
                                     <li class="nav-item"><a class="nav-link" href="celebrities.php">CelebritiesList</a></li>
                                     <li class="nav-item"><a class="nav-link" href="top-movies.php">Top Movies</a></li>
                                     <li class="nav-item"><a class="nav-link" href="blog.php">News</a></li>

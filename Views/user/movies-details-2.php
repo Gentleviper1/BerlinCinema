@@ -49,6 +49,7 @@
 						<button><i class="icofont icofont-search"></i></button>
 					</form>
 					<ul>
+						
 						<li><a class="" href="../../Auth/login.php">Login</a></li>
 					</ul>
 				</div>
@@ -56,290 +57,32 @@
 					<div class="responsive-menu"></div>
 					<div class="mainmenu">
 						<ul id="primary-menu">
-							<li><a href="index.php">Home</a></li>
-							<li><a href="movies.php">Movies</a></li>
-							<li><a class="active" href="celebrities.php">CelebritiesList</a></li>
-							<li><a href="top-movies.php">Top Movies</a></li>
-							<li><a href="blog.php">News</a></li>
-							<li><a href="#">Pages <i class="icofont icofont-simple-down"></i></a>
+							<li><a class="active" href="index.php">Home</a></li>
+						<!--<li><a href="movies.php">Movies</a></li>-->
+							<li><a href="showtimes.php">showtimes</a></li>
+							<li><a href="profile.php">profile</a></li>
+							<li><a href="blog-2.php">News</a></li>
+							<li><a class="active" href="#">Pages <i class="icofont icofont-simple-down"></i></a>
 								<ul>
-									<li><a href="blog-details.php">Blog Details</a></li>
-									<li><a href="movie-details.php">Movie Details</a></li>
+									<li><a href="blog-details-2.php">Blog Details</a></li>
+									<li><a class="active" href="movie-details-2.php">Movie Details</a></li>
 								</ul>
 							</li>
-							<li><a class="theme-btn" href="#"><i class="icofont icofont-ticket"></i> Tickets</a></li>
+							<li><a class="theme-btn" href="tickets.php"><i class="icofont icofont-ticket"></i> Tickets</a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
 	</header>
-	<div class="login-area">
-		<div class="login-box">
-			<a href="#"><i class="icofont icofont-close"></i></a>
-			<h2>LOGIN</h2>
-			<form action="#">
-				<h6>USERNAME OR EMAIL ADDRESS</h6>
-				<input type="text" />
-				<h6>PASSWORD</h6>
-				<input type="text" />
-				<div class="login-remember">
-					<input type="checkbox" />
-					<span>Remember Me</span>
-				</div>
-				<div class="login-signup">
-					<span>SIGNUP</span>
-				</div>
-				<a href="#" class="theme-btn">LOG IN</a>
-				<span>Or Via Social</span>
-				<div class="login-social">
-					<a href="#"><i class="icofont icofont-social-facebook"></i></a>
-					<a href="#"><i class="icofont icofont-social-twitter"></i></a>
-					<a href="#"><i class="icofont icofont-social-linkedin"></i></a>
-					<a href="#"><i class="icofont icofont-social-google-plus"></i></a>
-					<a href="#"><i class="icofont icofont-camera"></i></a>
-				</div>
-			</form>
-
-		</div>
-	</div>
-	<div class="buy-ticket">
-		<div class="container">
-			<div class="buy-ticket-area">
-				<a href="#"><i class="icofont icofont-close"></i></a>
-				<div class="row">
-					<div class="col-lg-8">
-						<div class="buy-ticket-box">
-							<h4>Buy Tickets</h4>
-							<h5>Seat</h5>
-							<h6>Screen</h6>
-							<div class="ticket-box-table">
-								<table class="ticket-table-seat">
-									<tr>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-									</tr>
-									<tr>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-									</tr>
-									<tr>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-									</tr>
-									<tr>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-									</tr>
-									<tr>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-									</tr>
-								</table>
-								<table>
-									<tr>
-										<td>1</td>
-									</tr>
-									<tr>
-										<td>2</td>
-									</tr>
-									<tr>
-										<td>3</td>
-									</tr>
-									<tr>
-										<td>4</td>
-									</tr>
-									<tr>
-										<td>5</td>
-									</tr>
-								</table>
-								<table class="ticket-table-seat">
-									<tr>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-									</tr>
-									<tr>
-										<td class="active">1</td>
-										<td class="active">1</td>
-										<td class="active">1</td>
-										<td class="active">1</td>
-										<td class="active">1</td>
-										<td class="active">1</td>
-										<td class="active">1</td>
-									</tr>
-									<tr>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-									</tr>
-									<tr>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-									</tr>
-									<tr>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-									</tr>
-								</table>
-								<table>
-									<tr>
-										<td>1</td>
-									</tr>
-									<tr>
-										<td>2</td>
-									</tr>
-									<tr>
-										<td>3</td>
-									</tr>
-									<tr>
-										<td>4</td>
-									</tr>
-									<tr>
-										<td>5</td>
-									</tr>
-								</table>
-								<table class="ticket-table-seat">
-									<tr>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-									</tr>
-									<tr>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-									</tr>
-									<tr>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-									</tr>
-									<tr>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-									</tr>
-									<tr>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-										<td>1</td>
-									</tr>
-								</table>
-							</div>
-							<div class="ticket-box-available">
-								<input type="checkbox" />
-								<span>Available</span>
-								<input type="checkbox" checked />
-								<span>Unavailable</span>
-								<input type="checkbox" />
-								<span>Selected</span>
-							</div>
-							<a href="#" class="theme-btn">previous</a>
-							<a href="#" class="theme-btn">Next</a>
-						</div>
-					</div>
-					<div class="col-lg-3 offset-lg-1">
-						<div class="buy-ticket-box mtr-30">
-							<h4>Your Information</h4>
-							<ul>
-								<li>
-									<p>Location</p>
-									<span>HB Cinema Box Corner</span>
-								</li>
-								<li>
-									<p>TIME</p>
-									<span>2018.07.09 20:40</span>
-								</li>
-								<li>
-									<p>Movie name</p>
-									<span>Home Alone</span>
-								</li>
-								<li>
-									<p>Ticket number</p>
-									<span>2 Adults, 2 Children, 2 Seniors</span>
-								</li>
-								<li>
-									<p>Price</p>
-									<span>89$</span>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div><!-- header section end -->
+	<!-- header section end -->
 	<!-- breadcrumb area start -->
 	<section class="breadcrumb-area">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="breadcrumb-area-content">
-						<h1>Celebrities Page</h1>
+						<h1>Movie Detalied Page</h1>
 					</div>
 				</div>
 			</div>
@@ -352,53 +95,52 @@
 				<div class="row flexbox-center">
 					<div class="col-lg-5 text-lg-left text-center">
 						<div class="transformers-content">
-							<img src="assets/img/slide4.jpg" alt="about" />
+							<img src="assets/img/slide2.png" alt="about" />
 						</div>
 					</div>
 					<div class="col-lg-7">
-						<div class="transformers-content mtr-30">
-							<h2>Alex Px.</h2>
-							<a href="#" class="theme-btn">Biography</a>
-							<a href="#">Filmography</a>
+						<div class="transformers-content">
+							<h2>The Transformers</h2>
+							<p>3D | Animation | Action | Sci-Fi</p>
 							<ul>
 								<li>
 									<div class="transformers-left">
-										Height:
+										Movie:
 									</div>
 									<div class="transformers-right">
-										5.7”
+										<a href="#">Sci-Fic</a>
 									</div>
 								</li>
 								<li>
 									<div class="transformers-left">
-										Weight:
+										Writer:
 									</div>
 									<div class="transformers-right">
-										1136LB
+										Stephen McFeely, Christopher Markus
 									</div>
 								</li>
 								<li>
 									<div class="transformers-left">
-										Eye Color:
+										Director:
 									</div>
 									<div class="transformers-right">
-										Black
+										Joe Johnston
 									</div>
 								</li>
 								<li>
 									<div class="transformers-left">
-										Hair Color:
+										Time:
 									</div>
 									<div class="transformers-right">
-										Black
+										190m
 									</div>
 								</li>
 								<li>
 									<div class="transformers-left">
-										Birthday:
+										Release:
 									</div>
 									<div class="transformers-right">
-										1985.Jun.20
+										2018-07-22
 									</div>
 								</li>
 								<li>
@@ -411,15 +153,21 @@
 								</li>
 								<li>
 									<div class="transformers-left">
-										Hobby:
+										Cinema:
 									</div>
 									<div class="transformers-right">
-										Base Ball, Gaming, Exploring, Baook Reading
+										HB Movies | HW Town <a href="#" class="theme-btn">Movies House</a>Grand Seats | HB Max
+										<div class="transformers-bottom">
+											<p>May 19, 2018 <span>15h47</span></p>
+											<p>May 19, 2018 <span>15h47</span></p>
+											<p>May 19, 2018 <span>15h47</span></p>
+										</div>
+
 									</div>
 								</li>
 								<li>
 									<div class="transformers-left">
-										Follow:
+										Share:
 									</div>
 									<div class="transformers-right">
 										<a href="#"><i class="icofont icofont-social-facebook"></i></a>
@@ -432,6 +180,7 @@
 						</div>
 					</div>
 				</div>
+				<a href="#" class="theme-btn"><i class="icofont icofont-ticket"></i> BUY TICKET</a>
 			</div>
 		</div>
 	</section><!-- transformers area end -->

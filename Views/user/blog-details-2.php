@@ -5,7 +5,7 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Details<title>
+		<title>Moviepoint/<title>
 		<!-- Favicon Icon -->
 		<link rel="icon" type="image/png" href="assets/img/favcion.png" />
 		<!-- Bootstrap CSS -->
@@ -40,7 +40,7 @@
 					<div class="header-right">
 						<form action="#">
 							<select>
-							<option value="Movies">Tittle</option>
+                            <option value="Movies">Tittle</option>
 							<option value="Movies">Category</option>
 							<option value="Movies">Genre</option>
 							</select>
@@ -49,22 +49,22 @@
 						</form>
 						<ul>
 							
-							<li><a class="" href="../../Auth/login.php">Login</a></li>
+							<li><a class="" href="index.php">Logout</a></li>
 						</ul>
 					</div>
 					<div class="menu-area">
 						<div class="responsive-menu"></div>
 					    <div class="mainmenu">
                             <ul id="primary-menu">
-                                <li><a href="index.php">Home</a></li>
-                              <!--<li><a href="movies.php">Movies</a></li>-->
-                                <!-- <li><a href="celebrities.php">CelebritiesList</a></li> -->
-                                <li><a href="top-movies.php">Top Movies</a></li>
-                                <li><a href="blog.php">News</a></li>
+                            <li><a href="index-2.php">Home</a></li>
+							<li><a class="active" href="movies.php">Movies</a></li>
+							<li><a href="showtimes-2.php">Showtimes</a></li>
+							<li><a href="profile.php">Profile</a></li>
+							<li><a href="blog-2.php">News</a></li>
 								<li><a class="active" href="#">Pages <i class="icofont icofont-simple-down"></i></a>
 									<ul>
-										<li><a class="active" href="blog-details.php">Blog Details</a></li>
-										<li><a href="movie-details.php">Movie Details</a></li>
+										<li><a class="active" href="blog-details-2.php">Blog Details</a></li>
+										<li><a href="movie-details-2.php">Movie Details</a></li>
 									</ul>
 								</li>
                                 <li><a class="theme-btn" href="#"><i class="icofont icofont-ticket"></i> Tickets</a></li>
@@ -74,7 +74,8 @@
 				</div>
 			</div>
 		</header>
-	<!-- header section end -->
+		
+		<!-- header section end -->
 		<!-- breadcrumb area start -->
 		<section class="breadcrumb-area">
 			<div class="container">
