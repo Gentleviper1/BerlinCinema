@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <html lang="en">
 
@@ -68,16 +69,18 @@
 									<li><a href="movie-details.php">Movie Details</a></li>
 								</ul>
 							</li>
-							<li><a class="theme-btn" href="../../Auth/login.php"><i class="icofont icofont-ticket"></i> Tickets</a></li>
+
+							<a class="theme-btn " href="../../Auth/login.php"><i class="icofont icofont-ticket"></i> Tickets</a>
+							
 						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
 	</header>
-	
 
-		</div>
+
+	</div>
 	</div>
 	<div class="buy-ticket">
 		<div class="container">
@@ -885,5 +888,3 @@
 	<!-- main JS -->
 	<script src="assets/js/main.js"></script>
 </body>
-
-</phph>

@@ -1,0 +1,169 @@
+/* Tickets page styles */
+
+.seat {
+    width: 32px;
+    height: 32px;
+    background-color: #24262d;
+    margin: 4px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 32px;
+    user-select: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: 600;
+    color: #b6b7b9;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.seat:hover:not(.occupied):not(.selected) {
+    background-color: #eb315a;
+    color: #fff;
+}
+
+.seat.selected {
+    background-color: #eb315a;
+    color: white;
+    box-shadow: 0 0 8px #eb315a;
+}
+
+.seat.occupied {
+    background-color: #963dad;
+    cursor: not-allowed;
+    color: #fff;
+    box-shadow: none;
+}
+
+.seat-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.screen {
+    background-color: #13151f;
+    height: 50px;
+    margin: 20px auto 30px auto;
+    width: 80%;
+    border-radius: 12px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 700;
+    color: #b6b7b9;
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.tickets-section {
+    background-color: #13151f;
+    padding: 60px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.section-title h1 {
+    color: #eb315a;
+    font-weight: 700;
+}
+
+.section-title p {
+    color: #b6b7b9;
+    font-size: 1.1rem;
+}
+
+#ticketPrice, #totalPrice {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #eb315a;
+}
+
+.btn-primary {
+    background-color: #eb315a;
+    border-color: #eb315a;
+    transition: background-color 0.3s ease;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #c72a4a;
+    border-color: #c72a4a;
+    color: #fff;
+}
+
+/* Navbar and header styles to match main site */
+.header {
+    background: transparent !important;
+    padding: 18px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.header .logo img {
+    max-height: 50px;
+}
+
+.header .header-right form select,
+.header .header-right form input[type="text"] {
+    background: transparent;
+    color: #b6b7b9;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 30px;
+    border: 1px solid #eee;
+}
+
+.header .header-right form button.btn-primary {
+    background-color: #eb315a;
+    border-color: #eb315a;
+    color: #fff;
+}
+
+.header .header-right form button.btn-primary:hover {
+    background-color: transparent;
+    color: #eb315a;
+    border-color: #eb315a;
+}
+
+.header .navbar-nav .nav-link {
+    color: #b6b7b9 !important;
+    font-weight: 600;
+    padding: 3px 15px;
+    transition: color 0.3s ease;
+}
+
+.header .navbar-nav .nav-link:hover,
+.header .navbar-nav .nav-link.active {
+    color: #eb315a !important;
+}
+
+.header .btn-theme {
+    background-color: #eb315a;
+    color: #fff;
+    border-radius: 35px;
+    padding: 5px 25px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.header .btn-theme:hover {
+    background-color: transparent;
+    color: #eb315a;
+    border: 1px solid #eb315a;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .header .header-right form {
+        flex-wrap: wrap;
+    }
+    .header .header-right form select,
+    .header .header-right form input[type="text"] {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+    .header .header-right form button.btn-primary {
+        width: 100%;
+    }
+}
