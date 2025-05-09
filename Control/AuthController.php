@@ -1,6 +1,6 @@
 <?php
-require_once '../Model/Customer.php';
-require_once '../Controller/DBController.php';
+require_once __DIR__ . '/../Model/Customer.php';
+require_once __DIR__ . '/DBController.php';
 class AuthController{
     protected $db;
     public function login(Customer $Customer)

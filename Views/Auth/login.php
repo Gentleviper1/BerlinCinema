@@ -1,10 +1,11 @@
 <?php
 require_once '../../Model/Customer.php';
-require_once '../../Controller/AuthController.php';
+require_once '../../Control/AuthController.php';
 if (isset($_POST['username']) && isset($_POST['password'])) {
     if (!empty($_POST['username']) && !empty($_POST['password'])) {
         $Customer = new Customer();
         $AuthController = new AuthController();
+        $email = $_POST['username']; // Define $email variable properly
         $Customer->setemail($email)($_POST['username']);
         $Customer->setpassword($_POST['password']);
         $AuthController->login($Customer);
