@@ -78,7 +78,7 @@
     <!-- header section end -->
 
     <!-- User Profile Section -->
-    <section class="user-profile-section pt-60 pb-60">
+    <section class="user-profile-section pt-60 pb-60 bg-light">
         <div class="container">
             <div class="section-title text-center mb-4">
                 <h1><i class="icofont icofont-user"></i> User Profile</h1>
@@ -86,11 +86,11 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-6">
-                    <div class="card p-4 shadow-sm">
+                    <div class="card p-4 shadow-sm border-primary">
                         <div class="text-center mb-4">
-                            <img src="assets/img/user-avatar.png" alt="User Avatar" class="rounded-circle" width="120" height="120" />
+                            <img src="assets/img/user-avatar.png" alt="User Avatar" class="rounded-circle border border-3 border-primary" width="120" height="120" />
                         </div>
-                        <form>
+                        <form id="profile-form">
                             <div class="mb-3">
                                 <label for="userName" class="form-label">Full Name</label>
                                 <input type="text" class="form-control" id="userName" value="John Doe" />
@@ -107,8 +107,10 @@
                                 <label for="userAddress" class="form-label">Address</label>
                                 <textarea class="form-control" id="userAddress" rows="3">123 Main St, City, Country</textarea>
                             </div>
-                            <div class="d-grid">
-                                <button type="submit" class="btn btn-primary">Update Profile</button>
+                            <div class="d-grid gap-2">
+                                <button type="button" id="edit-profile-btn" class="btn btn-outline-primary">Edit Profile</button>
+                                <button type="submit" id="save-profile-btn" class="btn btn-primary d-none">Save Changes</button>
+                                <button type="button" id="cancel-edit-btn" class="btn btn-secondary d-none">Cancel</button>
                             </div>
                         </form>
                     </div>
@@ -116,6 +118,43 @@
             </div>
         </div>
     </section>
+
+    <script>
+        $(document).ready(function() {
+            // Initially disable form inputs
+            $('#profile-form input, #profile-form textarea').prop('disabled', true);
+
+            // Edit button click
+            $('#edit-profile-btn').click(function() {
+                $('#profile-form input, #profile-form textarea').prop('disabled', false);
+                $('#edit-profile-btn').addClass('d-none');
+                $('#save-profile-btn, #cancel-edit-btn').removeClass('d-none');
+            });
+
+            // Cancel button click
+            $('#cancel-edit-btn').click(function() {
+                // Reset form values to original (could be enhanced to fetch original data)
+                $('#userName').val('John Doe');
+                $('#userEmail').val('john.doe@example.com');
+                $('#userPhone').val('+1234567890');
+                $('#userAddress').val('123 Main St, City, Country');
+
+                $('#profile-form input, #profile-form textarea').prop('disabled', true);
+                $('#edit-profile-btn').removeClass('d-none');
+                $('#save-profile-btn, #cancel-edit-btn').addClass('d-none');
+            });
+
+            // Save button click (form submit)
+            $('#profile-form').submit(function(e) {
+                e.preventDefault();
+                // Here you would add AJAX call to save data to server
+                alert('Profile updated successfully!');
+                $('#profile-form input, #profile-form textarea').prop('disabled', true);
+                $('#edit-profile-btn').removeClass('d-none');
+                $('#save-profile-btn, #cancel-edit-btn').addClass('d-none');
+            });
+        });
+    </script>
 
     <!-- footer section start -->
     <footer class="footer">
