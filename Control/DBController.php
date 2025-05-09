@@ -2,10 +2,11 @@
  class DBController
 {
     public $dbHost = "localhost";
-    public $dbUser =    "root";
+    public $dbUser =   "root";
     public $dbPass = "";
     public $dbName = "OurWebsite";
-    private $conn;
+   
+    public $conn;
 
     public function openConnection()
     {
@@ -29,6 +30,29 @@
         }
         
     }
-       
+    public function executeQuery($query)
+    {
+        $result = $this->conn->query($query);
+        if ($result === TRUE) {
+            return true;
+        } else {
+            echo "Error: " . $this->conn->error;
+            return false;
+        }
+    }
+    public function fetchData($query)
+    {
+        $result = $this->conn->query($query);
+        if ($result) {
+            $data = [];
+            while ($row = $result->fetch_assoc()) {
+                $data[] = $row;
+            }
+            return $data;
+        } else {
+            echo "Error: " . $this->conn->error;
+            return false;
+        }
+    }
 }
 ?>

@@ -1,10 +1,20 @@
 <?php
-require_once '../Model/Customer.php';
+require_once '../../Model/Customer.php';
+require_once '../../Controller/AuthController.php';
 if (isset($_POST['username']) && isset($_POST['password'])) {
     if (!empty($_POST['username']) && !empty($_POST['password'])) {
         $Customer = new Customer();
-        $Customer->setUsername($_POST['username']);
-        $Customer->setPassword($_POST['password']);
+        $AuthController = new AuthController();
+        $Customer->setemail($email)($_POST['username']);
+        $Customer->setpassword($_POST['password']);
+        $AuthController->login($Customer);
+        if ($AuthController->login($Customer)) {
+            // Redirect to the dashboard or another page
+            header("Location: ../Admin/index.php");
+            exit();
+        } else {
+            echo "<script>alert('Invalid username or password');</script>";
+        }
     }
 }
 
