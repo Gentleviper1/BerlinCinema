@@ -204,7 +204,7 @@
 						<button><i class="icofont icofont-search"></i></button>
 					</form>
 					<ul>
-						<li><a class="" href="../../Auth/login.php">Login</a></li>
+						<li><a class="" href="index.php">Logout</a></li>
 					</ul>
 				</div>
 				<div class="menu-area">
