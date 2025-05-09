@@ -1,4 +1,3 @@
-
 <!DOCTYPE HTML>
 <html lang="en">
 
@@ -6,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Moviepoint - Online Movie,Vedio and TV Show php Template</title>
+	<title> Home Page</title>
 	<!-- Favicon Icon -->
 	<link rel="icon" type="image/png" href="assets/img/favcion.png" />
 	<!-- Bootstrap CSS -->
@@ -42,7 +41,7 @@
 				<div class="header-right">
 					<form action="#">
 						<select>
-						<option value="Movies">Tittle</option>
+							<option value="Movies">Tittle</option>
 							<option value="Movies">Category</option>
 							<option value="Movies">Genre</option>
 						</select>
@@ -66,12 +65,12 @@
 							<li><a href="">Pages <i class="icofont icofont-simple-down"></i></a>
 								<ul>
 									<li><a href="blog-details.php">Blog Details</a></li>
-									<li><a href="movie-details.php">Movie Details</a></li>
+									<li><a href="movies-details.php">Movie Details</a></li>
 								</ul>
 							</li>
 
 							<a class="theme-btn " href="../../Auth/login.php"><i class="icofont icofont-ticket"></i> Tickets</a>
-							
+
 						</ul>
 					</div>
 				</div>
@@ -110,7 +109,7 @@
 
 							<div class="slide-trailor">
 								<h3>BOOK NOW !</h3>
-								<a class="theme-btn theme-btn2" href="#"><i class="icofont icofont-play"></i> Tickets</a>
+								<a class="theme-btn theme-btn2" href="tickets.php"><i class="icofont icofont-play"></i> Get Tickets</a>
 							</div>
 						</div>
 					</div>
@@ -138,7 +137,7 @@
 
 							<div class="slide-trailor">
 								<h3>BOOK NOW !</h3>
-								<a class="theme-btn theme-btn2" href="#"><i class="icofont icofont-play"></i> Tickets</a>
+								<a class="theme-btn theme-btn2" href="tickets.php"><i class="icofont icofont-play"></i> Get Tickets</a>
 							</div>
 						</div>
 					</div>
@@ -166,7 +165,7 @@
 
 							<div class="slide-trailor">
 								<h3>BOOK NOW !</h3>
-								<a class="theme-btn theme-btn2" href="#"><i class="icofont icofont-play"></i> Tickets</a>
+								<a class="theme-btn theme-btn2" href="tickets.php"><i class="icofont icofont-play"></i> Get Tickets</a>
 							</div>
 						</div>
 					</div>
@@ -196,7 +195,7 @@
 						</div>
 						<div class="slide-trailor">
 							<h3>BOOK NOW !</h3>
-							<a class="theme-btn theme-btn2" href="#"><i class="icofont icofont-play"></i> Tickets</a>
+							<a class="theme-btn theme-btn2" href="tickets.php"><i class="icofont icofont-play"></i> Get Tickets</a>
 						</div>
 					</div>
 				</div>
@@ -227,7 +226,7 @@
 
 							<div class="slide-trailor">
 								<h3>BOOK NOW !</h3>
-								<a class="theme-btn theme-btn2" href="#"><i class="icofont icofont-play"></i> Tickets</a>
+								<a class="theme-btn theme-btn2" href="tickets.php"><i class="icofont icofont-play"></i> Get Tickets</a>
 							</div>
 						</div>
 					</div>
@@ -257,7 +256,7 @@
 
 							<div class="slide-trailor">
 								<h3>BOOK NOW !</h3>
-								<a class="theme-btn theme-btn2" href="#"><i class="icofont icofont-play"></i> Tickets</a>
+								<a class="theme-btn theme-btn2" href="tickets.php"><i class="icofont icofont-play"></i>Get Tickets</a>
 							</div>
 						</div>
 					</div>
@@ -278,7 +277,7 @@
 				<div class="col-lg-6 text-center text-lg-right">
 					<div class="portfolio-menu">
 						<ul>
-							<li data-filter="*" class="active">Latest</li>
+							<li data-filter=".latest" class="active">Latest</li>
 							<li data-filter=".soon">Comming Soon</li>
 							<li data-filter=".top">Top Rated</li>
 							<li data-filter=".released">Recently Released</li>
@@ -290,7 +289,7 @@
 			<div class="row">
 				<div class="col-lg-9">
 					<div class="row portfolio-item">
-						<div class="col-md-4 col-sm-6 soon released">
+						<div class="col-md-4 col-sm-6  released latest">
 							<div class="single-portfolio">
 								<div class="single-portfolio-img">
 									<img src="assets/img/Se7en_.jpg" alt="se7en" />
@@ -312,7 +311,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-4 col-sm-6 top">
+						<div class="col-md-4 col-sm-6 released latest">
 							<div class="single-portfolio">
 								<div class="single-portfolio-img">
 									<img src="assets/img/WolfMan.avif" alt="WolfMan" />
@@ -358,7 +357,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-4 col-sm-6 top released">
+						<div class="col-md-4 col-sm-6 top released latest">
 							<div class="single-portfolio">
 								<div class="single-portfolio-img">
 									<img src="assets/img/The Brutalist.avif" alt="The Brutalist" />
@@ -381,7 +380,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-4 col-sm-6 released">
+						<div class="col-md-4 col-sm-6 released latest">
 							<div class="single-portfolio">
 								<div class="single-portfolio-img">
 									<img src="assets/img/Presence.avif" alt="portfolio" />
@@ -404,7 +403,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-4 col-sm-6 soon top">
+						<div class="col-md-4 col-sm-6 soon ">
 							<div class="single-portfolio">
 								<div class="single-portfolio-img">
 									<img src="assets/img/DogMAN.jpg" alt="DogMAN" />
@@ -584,35 +583,58 @@
 	<footer class="footer">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-3 col-sm-6">
+				<div class="col-lg-2 col-sm-6">
 					<div class="widget">
 						<img src="assets/img/logo.png" alt="about" />
-						<p>7th Harley Place, London W1G 8LZ United Kingdom</p>
-						<h6><span>Call us: </span>(+880) 111 222 3456</h6>
+						<p> Mühlenstraße, 10243 Berlin, Germany</p>
+						<h6><span>Call us: </span>(+20)1069930446</h6>
+					</div>
+
+				</div>
+				<div class="col-lg-2 col-sm-6">
+					<div class="widget">
+						<h4>Our Company</h4>
+						<ul>
+							<li><a href="">Our Brands</a></li>
+							<li><a href="#">Contact Us</a></li>
+							<li><a href="#">FAQs</a></li>
+							<li><a href="#">Berlin Cinema Investor Connect </a></li>
+						</ul>
 					</div>
 				</div>
-				<div class="col-lg-3 col-sm-6">
+				<div class="col-lg-2 col-sm-6">
+					<div class="widget">
+						<h4>Movies</h4>
+						<ul>
+							<li><a href="">Movies</a></li>
+							<li><a href="#">Theatres</a></li>
+							<li><a href="#">Ratings Information</a></li>
+							<li><a href="#">IMAX at Berlin Cinema </a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-2 col-sm-6">
 					<div class="widget">
 						<h4>Legal</h4>
 						<ul>
 							<li><a href="#">Terms of Use</a></li>
 							<li><a href="#">Privacy Policy</a></li>
-							<li><a href="#">Security</a></li>
 						</ul>
 					</div>
 				</div>
-				<div class="col-lg-3 col-sm-6">
+				<div class="col-lg-2 col-sm-6">
 					<div class="widget">
 						<h4>Account</h4>
 						<ul>
-							<li><a href="#">My Account</a></li>
+							<li><a href="">My Account</a></li>
 							<li><a href="#">Watchlist</a></li>
 							<li><a href="#">Collections</a></li>
 							<li><a href="#">User Guide</a></li>
 						</ul>
 					</div>
 				</div>
-				<div class="col-lg-3 col-sm-6">
+
+				<div class="col-lg-2 col-sm-6">
 					<div class="widget">
 						<h4>Newsletter</h4>
 						<p>Subscribe to our newsletter system now to get latest news from us.</p>
@@ -630,7 +652,7 @@
 				<div class="row">
 					<div class="col-lg-6 text-center text-lg-left">
 						<div class="copyright-content">
-							<p><a target="_blank" href="https://www.templateshub.net">Templates Hub</a></p>
+							<p><a target="_blank" href="index.php">Berlin Cinema</a></p>
 						</div>
 					</div>
 					<div class="col-lg-6 text-center text-lg-right">
@@ -659,3 +681,5 @@
 	<!-- main JS -->
 	<script src="assets/js/main.js"></script>
 </body>
+
+</html>

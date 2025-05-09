@@ -196,7 +196,7 @@
 				<div class="header-right">
 					<form action="#">
 						<select>
-						<option value="Movies">Tittle</option>
+							<option value="Movies">Tittle</option>
 							<option value="Movies">Category</option>
 							<option value="Movies">Genre</option>
 						</select>
@@ -229,7 +229,7 @@
 			</div>
 		</div>
 	</header>
-<!-- header section end -->
+	<!-- header section end -->
 	<!-- breadcrumb area start -->
 	<section class="breadcrumb-area">
 		<div class="container">
@@ -524,38 +524,62 @@
 	</section><!-- portfolio section end -->
 
 	<!-- footer section start -->
+	<!-- footer section start -->
 	<footer class="footer">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-3 col-sm-6">
+				<div class="col-lg-2 col-sm-6">
 					<div class="widget">
 						<img src="assets/img/logo.png" alt="about" />
-						<p>7th Harley Place, London W1G 8LZ United Kingdom</p>
-						<h6><span>Call us: </span>(+880) 111 222 3456</h6>
+						<p> Mühlenstraße, 10243 Berlin, Germany</p>
+						<h6><span>Call us: </span>(+20)1069930446</h6>
+					</div>
+
+				</div>
+				<div class="col-lg-2 col-sm-6">
+					<div class="widget">
+						<h4>Our Company</h4>
+						<ul>
+							<li><a href="">Our Brands</a></li>
+							<li><a href="#">Contact Us</a></li>
+							<li><a href="#">FAQs</a></li>
+							<li><a href="#">Berlin Cinema Investor Connect </a></li>
+						</ul>
 					</div>
 				</div>
-				<div class="col-lg-3 col-sm-6">
+				<div class="col-lg-2 col-sm-6">
+					<div class="widget">
+						<h4>Movies</h4>
+						<ul>
+							<li><a href="">Movies</a></li>
+							<li><a href="#">Theatres</a></li>
+							<li><a href="#">Ratings Information</a></li>
+							<li><a href="#">IMAX at Berlin Cinema </a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-2 col-sm-6">
 					<div class="widget">
 						<h4>Legal</h4>
 						<ul>
 							<li><a href="#">Terms of Use</a></li>
 							<li><a href="#">Privacy Policy</a></li>
-							<li><a href="#">Security</a></li>
 						</ul>
 					</div>
 				</div>
-				<div class="col-lg-3 col-sm-6">
+				<div class="col-lg-2 col-sm-6">
 					<div class="widget">
 						<h4>Account</h4>
 						<ul>
-							<li><a href="#">My Account</a></li>
+							<li><a href="">My Account</a></li>
 							<li><a href="#">Watchlist</a></li>
 							<li><a href="#">Collections</a></li>
 							<li><a href="#">User Guide</a></li>
 						</ul>
 					</div>
 				</div>
-				<div class="col-lg-3 col-sm-6">
+
+				<div class="col-lg-2 col-sm-6">
 					<div class="widget">
 						<h4>Newsletter</h4>
 						<p>Subscribe to our newsletter system now to get latest news from us.</p>
@@ -573,7 +597,7 @@
 				<div class="row">
 					<div class="col-lg-6 text-center text-lg-left">
 						<div class="copyright-content">
-							<p><a target="_blank" href="https://www.templateshub.net">Templates Hub</a></p>
+							<p><a target="_blank" href="index.php">Berlin Cinema</a></p>
 						</div>
 					</div>
 					<div class="col-lg-6 text-center text-lg-right">
@@ -587,7 +611,6 @@
 			</div>
 		</div>
 	</footer><!-- footer section end -->
-	<!-- jquery main JS -->
 	<!-- jquery main JS -->
 	<script src="assets/js/jquery.min.js"></script>
 	<!-- Bootstrap JS -->
@@ -603,3 +626,5 @@
 	<!-- main JS -->
 	<script src="assets/js/main.js"></script>
 </body>
+
+</html>
