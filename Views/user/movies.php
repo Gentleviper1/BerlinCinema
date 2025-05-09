@@ -625,6 +625,11 @@
 	<script src="assets/js/isotope.pkgd.min.js"></script>
 	<!-- main JS -->
 	<script src="assets/js/main.js"></script>
+
+
+
+
+	
 </body>
 
 </html>

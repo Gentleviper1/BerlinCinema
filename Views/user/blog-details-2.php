@@ -59,7 +59,7 @@
 						<ul id="primary-menu">
 							<li><a href="index-2.php">Home</a></li>
 							<li><a class="active" href="movies.php">Movies</a></li>
-							<li><a href="showtimes-2.php">Showtimes</a></li>
+							<li><a href="showtimes.php">Showtimes</a></li>
 							<li><a href="profile.php">Profile</a></li>
 							<li><a href="blog-2.php">News</a></li>
 							<li><a class="active" href="#">Pages <i class="icofont icofont-simple-down"></i></a>
