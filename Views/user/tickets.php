@@ -53,10 +53,7 @@
                                     <li class="nav-item"><a class="nav-link" href="blog.php">News</a></li>
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
-                                        <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
-                                            <li><a class="dropdown-item" href="blog-details.php">Blog Details</a></li>
-                                            <li><a class="dropdown-item" href="movies-details.php">Movie Details</a></li>
-                                        </ul>
+                                        <li><a href="movies-details-2.php">Movie Details <i class="icofont icofont-simple-down"></i></a>
                                     </li>
 
                                 </ul>

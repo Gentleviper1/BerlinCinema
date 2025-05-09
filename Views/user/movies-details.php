@@ -62,11 +62,7 @@
 							<li><a href="celebrities.php">CelebritiesList</a></li>
 							<li><a href="top-movies.php">Top Movies</a></li>
 							<li><a href="blog.php">News</a></li>
-							<li><a class="active" href="#">Pages <i class="icofont icofont-simple-down"></i></a>
-								<ul>
-									<li><a href="blog-details.php">Blog Details</a></li>
-									<li><a class="active" href="movies-details.php">Movie Details</a></li>
-								</ul>
+							<li><a href="movies-details.php">Movie Details <i class="icofont icofont-simple-down"></i></a>
 							</li>
 							<a class="theme-btn " href="../../Auth/login.php"><i class="icofont icofont-ticket"></i> Tickets</a>
 						</ul>
