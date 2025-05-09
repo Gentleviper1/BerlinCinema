@@ -39,20 +39,24 @@
         <div class="card">
             <div class="card-header">
                 <h3 class="mb-1">Signup </h3>
-                <p>Please enter your  information.</p>
+                <p>Please enter your information.</p>
             </div>
             <div class="card-body">
                 <div class="form-group">
                     <label for="">Username</label>
-                        <input class="form-control form-control-lg" type="text" name="nick" required="" placeholder="Username" autocomplete="off">
+                    <input class="form-control form-control-lg" type="text" name="nick" required="" placeholder="Username" autocomplete="off">
                 </div>
                 <div class="form-group">
                     <label for="">Date Of Birth</label>
                     <input class="form-control form-control-lg" type="date" required="" placeholder="Date of Birth">
                 </div>
                 <div class="form-group">
+                    <label for="">Phone</label>
+                    <input class="form-control form-control-lg" type="phone" required="" placeholder="Phone" autocomplete="off">
+                </div>
+                <div class="form-group">
                     <label for="">email</label>
-                        <input class="form-control form-control-lg" type="email" name="email" required="" placeholder="E-mail" autocomplete="off">
+                    <input class="form-control form-control-lg" type="email" name="email" required="" placeholder="E-mail" autocomplete="off">
                 </div>
                 <div class="form-group">
                     <label for="">Password</label>
