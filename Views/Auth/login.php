@@ -1,6 +1,7 @@
 <?php
 require_once '../../Model/Customer.php';
 require_once '../../Control/AuthController.php';
+$err_msg = "";
 if (isset($_POST['username']) && isset($_POST['password'])) {
     if (!empty($_POST['username']) && !empty($_POST['password'])) {
         $Customer = new Customer();
@@ -59,6 +60,12 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
             <div class="card-header text-center"><a href="../index.html"><img class="logo-img" src="../Admin/assets/images/logo1.png" alt="logo"></a><span class="splash-description">Please enter your user information.</span></div>
             <div class="card-body">
                 <form id="formAuthentication" class="mb-3" action="login.php" method="POST">
+                    <div class="alert alert-danger" role="alert">
+                        This is a danger alert—check it out!
+                        <?php
+                        ?>
+
+                    </div>
                     <div class="form-group">
                         <input class="form-control form-control-lg" id="username" type="text" placeholder="Username" autocomplete="off" name="username">
                     </div>
