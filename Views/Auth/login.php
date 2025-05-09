@@ -6,7 +6,7 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
         $Customer = new Customer();
         $AuthController = new AuthController();
         $email = $_POST['username']; // Define $email variable properly
-        $Customer->setemail($email)($_POST['username']);
+        $Customer->setemail($_POST['username']);
         $Customer->setpassword($_POST['password']);
         $AuthController->login($Customer);
         if ($AuthController->login($Customer)) {
