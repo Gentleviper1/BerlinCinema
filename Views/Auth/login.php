@@ -14,7 +14,7 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
             header("Location: ../Admin/index.php");
             exit();
         } else {
-            echo "<script>alert('Invalid username or password');</script>";
+            echo "alert('Invalid username or password');";
         }
     }
 }
