@@ -1,6 +1,7 @@
 <?php
 class Registeration
 {
+    private $id;
     private $fullname;  
     private $dob;
     private $phone;
@@ -10,6 +11,7 @@ class Registeration
 
     public function __construct($fullname, $dob,$phone, $email, $password, $confirmPassword)
     {
+        $this->id = null; // Assuming ID is auto-incremented in the database
         $this->fullname = $fullname;
         $this->dob = $dob;
         $this->phone = $phone;
@@ -19,6 +21,10 @@ class Registeration
     }
 
    
+    public function getId()
+    {
+        return $this->id;
+    }
     public function getFullname()
     {
         return $this->fullname;
