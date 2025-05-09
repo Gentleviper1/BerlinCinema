@@ -419,7 +419,7 @@ option {
 ------------------------------------*/
 .hero-area {
   position: relative;
-  background-image: url("../img/hero-area.png");
+  background-image: url("");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -817,9 +817,9 @@ hr {
 /*----------------------------------
 ---- Movie details PAGE CSS START ----
 ------------------------------------*/
-.breadcrumb-area {
+.breadcrumb-area1 {
   position: relative;
-  background-image: url("../img/breadcrumb.png");
+  background-image: url("../img/backk.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

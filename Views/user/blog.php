@@ -74,7 +74,7 @@
 	</header>
 	<!-- header section end -->
 	<!-- breadcrumb area start -->
-	<section class="breadcrumb-area">
+	<section class="breadcrumb-area1">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
