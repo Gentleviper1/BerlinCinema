@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Login</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../Views/Admin/assets/vendor/bootstrap/css/bootstrap.min.css">
-    <link href=assets/vendor/fonts/circular-std/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="../Views/Admin/assets/libs/css/style.css">
-    <link rel="stylesheet" href="../Views/Admin/assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
+    <link rel="stylesheet" href="../Admin/assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link href="../Admin/assets/vendor/fonts/circular-std/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="../Admin/assets/libs/css/style.css">
+    <link rel="stylesheet" href="../Admin/assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
     <style>
     html,
     body {
@@ -34,7 +34,7 @@
     <!-- ============================================================== -->
     <div class="splash-container">
         <div class="card ">
-            <div class="card-header text-center"><a href="../index.html"><img class="logo-img" src="../Views/Admin/assets/images/logo1.png" alt="logo"></a><span class="splash-description">Please enter your user information.</span></div>
+            <div class="card-header text-center"><a href="../index.html"><img class="logo-img" src="../Admin/assets/images/logo1.png" alt="logo"></a><span class="splash-description">Please enter your user information.</span></div>
             <div class="card-body">
                 <form id="formAuthentication" class="mb-3" action="login.php" method="POST">
                     <div class="form-group" >
