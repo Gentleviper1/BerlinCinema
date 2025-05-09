@@ -68,7 +68,7 @@
 									<li><a href="movies-details.php">Movie Details</a></li>
 								</ul>
 							</li>
-							<li><a class="theme-btn" href="#"><i class="icofont icofont-ticket"></i> Tickets</a></li>
+							<li><a class="theme-btn" href="../../Auth/login.php"><i class="icofont icofont-ticket"></i> Tickets</a></li>
 						</ul>
 					</div>
 				</div>

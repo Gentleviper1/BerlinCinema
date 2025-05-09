@@ -109,7 +109,7 @@
 
 							<div class="slide-trailor">
 								<h3>BOOK NOW !</h3>
-								<a class="theme-btn theme-btn2" href="tickets.php"><i class="icofont icofont-play"></i> Get Tickets</a>
+								<a class="theme-btn theme-btn2" href="../../Auth/login.php"><i class="icofont icofont-play"></i> Get Tickets</a>
 							</div>
 						</div>
 					</div>
@@ -137,7 +137,7 @@
 
 							<div class="slide-trailor">
 								<h3>BOOK NOW !</h3>
-								<a class="theme-btn theme-btn2" href="tickets.php"><i class="icofont icofont-play"></i> Get Tickets</a>
+								<a class="theme-btn theme-btn2" href="../../Auth/login.php"><i class="icofont icofont-play"></i> Get Tickets</a>
 							</div>
 						</div>
 					</div>
@@ -165,7 +165,7 @@
 
 							<div class="slide-trailor">
 								<h3>BOOK NOW !</h3>
-								<a class="theme-btn theme-btn2" href="tickets.php"><i class="icofont icofont-play"></i> Get Tickets</a>
+								<a class="theme-btn theme-btn2" href="../../Auth/login.php"><i class="icofont icofont-play"></i> Get Tickets</a>
 							</div>
 						</div>
 					</div>
@@ -195,7 +195,7 @@
 						</div>
 						<div class="slide-trailor">
 							<h3>BOOK NOW !</h3>
-							<a class="theme-btn theme-btn2" href="tickets.php"><i class="icofont icofont-play"></i> Get Tickets</a>
+							<a class="theme-btn theme-btn2" href="../../Auth/login.php"><i class="icofont icofont-play"></i> Get Tickets</a>
 						</div>
 					</div>
 				</div>
@@ -226,7 +226,7 @@
 
 							<div class="slide-trailor">
 								<h3>BOOK NOW !</h3>
-								<a class="theme-btn theme-btn2" href="tickets.php"><i class="icofont icofont-play"></i> Get Tickets</a>
+								<a class="theme-btn theme-btn2" href="../../Auth/login.php"><i class="icofont icofont-play"></i> Get Tickets</a>
 							</div>
 						</div>
 					</div>
@@ -256,7 +256,7 @@
 
 							<div class="slide-trailor">
 								<h3>BOOK NOW !</h3>
-								<a class="theme-btn theme-btn2" href="tickets.php"><i class="icofont icofont-play"></i>Get Tickets</a>
+								<a class="theme-btn theme-btn2" href="../../Auth/login.php"><i class="icofont icofont-play"></i>Get Tickets</a>
 							</div>
 						</div>
 					</div>

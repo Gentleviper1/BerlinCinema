@@ -68,7 +68,7 @@
 									<li><a href="movies-details.php">Movie Details</a></li>
 								</ul>
 							</li>
-							<li><a class="theme-btn" href="#"><i class="icofont icofont-ticket"></i> Tickets</a></li>
+							<a class="theme-btn " href="../../Auth/login.php"><i class="icofont icofont-ticket"></i> Tickets</a>
 						</ul>
 					</div>
 				</div>
@@ -201,7 +201,7 @@
 								</div>
 								<h4>130k voters</h4>
 							</div>
-							<!--  <a href="#" class="theme-btn "><i class="icofont icofont-ticket"></i> Get Ticket</a> -->> 
+							<!--  <a href="#" class="theme-btn "><i class="icofont icofont-ticket"></i> Get Ticket</a> -->>
 						</div>
 					</div>
 				</div>
