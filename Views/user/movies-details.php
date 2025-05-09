@@ -287,6 +287,7 @@
 			</div>
 		</div>
 	</section><!-- details area end -->
+	
 	<!-- footer section start -->
 	<footer class="footer">
 		<div class="container">
