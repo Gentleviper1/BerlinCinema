@@ -21,7 +21,7 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
     if (!empty($_POST['username']) && !empty($_POST['password'])) {
         $customer = new Customer();
         $auth = new AuthController();
-        $customer->username = $_POST['username'];
+        $customer->email= $_POST['username'];
         $customer->password = $_POST['password'];
         if (!$auth->login($customer)) {
             
@@ -38,8 +38,8 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
         else {
 
 
-
-            echo "Login Successfull";
+            header("location: ../user/index-2.php");
+         
 
         //   if(isset($_SESSION["CustomerId"]))
         //     {
@@ -152,7 +152,7 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
                     <div class="form-group">
                         <input 
                         class="form-control form-control-lg" 
-                        id="passwordd" 
+                        id="password" 
                         name="password" 
                         type="password" 
                         placeholder="Password">
