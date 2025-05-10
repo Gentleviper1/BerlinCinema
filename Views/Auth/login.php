@@ -1,24 +1,89 @@
 <?php
-require_once '../../Model/Customer.php';
-require_once '../../Control/AuthController.php';
-$err_msg = "";
+
+
+
+// $conn = new mysqli("localhost", "root", "", "ourwebsite");
+// if ($conn->connect_error) {
+//    echo "Error in connection : ".conn->connect_error;
+//    return false;
+// }
+// else {
+//    echo "Connected to database";
+// }
+
+
+
+require_once __DIR__ . '/../../Model/Customer.php';
+require_once __DIR__ . '/../../Control/AuthController.php';
+
+$errMsg = "";
 if (isset($_POST['username']) && isset($_POST['password'])) {
     if (!empty($_POST['username']) && !empty($_POST['password'])) {
-        $Customer = new Customer();
-        $AuthController = new AuthController();
-        $email = $_POST['username']; // Define $email variable properly
-        $Customer->setemail($_POST['username']);
-        $Customer->setpassword($_POST['password']);
-        $AuthController->login($Customer);
-        if ($AuthController->login($Customer)) {
-            // Redirect to the dashboard or another page
-            header("Location: ../Admin/index.php");
-            exit();
-        } else {
-            echo "alert('Invalid username or password');";
+        $customer = new Customer();
+        $auth = new AuthController();
+        $customer->username = $_POST['username'];
+        $customer->password = $_POST['password'];
+        if (!$auth->login($customer)) {
+            
+           if(isset($_SESSION["CustomerId"]))
+           {
+                session_start();
+           }
+             $errMsg = $_SESSION["errMsg"];
+           // $errMsg = "error";
+
+
         }
+        
+        else {
+
+
+
+            echo "Login Successfull";
+
+        //   if(isset($_SESSION["CustomerId"]))
+        //     {
+        //         session_start();
+        //     }
+          
+        //     if($_SESSION["CustomerName"]=="Mostafa")
+        //     {
+
+        //         header("location: ../user/index-2.php");
+        //     }
+        //     else
+        //     {
+
+        //     }
+
+        }
+
+
+
+    } else {
+        $errMsg="please fill all fields";
+        //$errMsg = "Please enter username and password";
     }
-}
+}   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ?>
 <!doctype html>
@@ -59,18 +124,38 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
         <div class="card ">
             <div class="card-header text-center"><a href="../index.html"><img class="logo-img" src="../Admin/assets/images/logo1.png" alt="logo"></a><span class="splash-description">Please enter your user information.</span></div>
             <div class="card-body">
+            
                 <form id="formAuthentication" class="mb-3" action="login.php" method="POST">
-                    <div class="alert alert-danger" role="alert">
-                        This is a danger alert—check it out!
+              
                         <?php
+                                if($errMsg!="" ){
+
+                                    ?>
+                                      <div class="alert alert-danger" role="alert"><?php echo $errMsg ;  ?></div>
+                                     
+                                    <?php
+                                }
+
                         ?>
 
                     </div>
                     <div class="form-group">
-                        <input class="form-control form-control-lg" id="username" type="text" placeholder="Username" autocomplete="off" name="username">
+                        <input
+                         class="form-control form-control-lg" 
+                         id="usernamee" 
+                         name="username" 
+                         type="text" 
+                         placeholder="Username" 
+                         autocomplete="off" 
+                         name="username">
                     </div>
                     <div class="form-group">
-                        <input class="form-control form-control-lg" id="password" name="password" type="password" placeholder="Password">
+                        <input 
+                        class="form-control form-control-lg" 
+                        id="passwordd" 
+                        name="password" 
+                        type="password" 
+                        placeholder="Password">
                     </div>
                     <div class="form-group">
                         <label class="custom-control custom-checkbox">
