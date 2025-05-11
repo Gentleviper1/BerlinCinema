@@ -48,22 +48,21 @@
 
              }
         }
-         public function insert($qry)
-         {
-                $result = $this-> conn-> query($qry);
-            
-                if (!$result)
-                {
-                  echo "Error : ".mysqli_error( $this->conn); 
-                  return false;
-                }
-                else
-                {
+        public function insert($qry)
+{
+         try {
+           $result = $this->conn->query($qry);
+              if (!$result) {
+           return false;
+           } else
+            {
+            return $this->conn->insert_id;
+            }
+       }        catch (mysqli_sql_exception $e) {
+            return false;
+       }
+      }
 
-                   return $this->conn->insert_id;
-   
-                }
-         }
  
 }
 ?>

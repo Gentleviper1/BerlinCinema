@@ -43,3 +43,4 @@ if (isset($_POST['username'], $_POST['password'], $_POST['phone'], $_POST['email
     header("Location: ../Views/Auth/register.php");
     exit();
 }
+

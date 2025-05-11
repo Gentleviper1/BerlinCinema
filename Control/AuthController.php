@@ -47,42 +47,43 @@ class AuthController
       session_destroy();
       header("Location: ../Views/Auth/login.php");
    }
-   /* public function register(Customer $customer)
-   {
-      $this->db = new DBController();
-      if ($this->db->openConnection()) {
-         $query = "insert into Customer  values ('','1', '$customer->name', '$customer->dob','1','$customer->email', '$customer->phone', '$customer->password')";
-         $result = $this->db->insert($query);
-         if ($result != false) {
-            $this->db->closeConnection();
-            return true;
-         } else {
-            $_SESSION["errMsg"] = "Something went wrong";
-            $this->db->closeConnection();
-            return false;
-         }
-      } else {
-         echo "Error in connecting to database";
+
+
+   
+public function register(Customer $customer)
+{
+   $this->db = new DBController();
+   if ($this->db->openConnection()) {
+
+      // Check if email already exists
+      $emailCheckQuery = "SELECT * FROM Customer WHERE email = '$customer->email'";
+      $existingUser = $this->db->select($emailCheckQuery);
+
+      if (!empty($existingUser)) {
+         session_start();
+         $_SESSION["errMsg"] = "Email is already registered. Please use another one.";
+         $this->db->closeConnection();
          return false;
       }
-   }*/
-   public function register(Customer $customer)
-   {
-      $this->db = new DBController();
-      if ($this->db->openConnection()) {
-         $query = "insert into Customer values ('','1', '$customer->name', '$customer->dob','1','$customer->email', '$customer->phone', '$customer->password')";
-         $result = $this->db->insert($query);
-         if ($result != false) {
-            $this->db->closeConnection();
-            return true;
-         } else {
-            $_SESSION["errMsg"] = "Something went wrong";
-            $this->db->closeConnection();
-            return false;
-         }
+
+      $query = "INSERT INTO Customer (userid, roleid, name, dob, userstatus, email, phone, password)
+                VALUES (NULL, '1', '$customer->name', '$customer->dob', '1', '$customer->email', '$customer->phone', '$customer->password')";
+
+      $result = $this->db->insert($query);
+      if ($result != false) {
+         $this->db->closeConnection();
+         return true;
       } else {
-         echo "Error in connecting to database";
+         session_start();
+         $_SESSION["errMsg"] = "Something went wrong during registration.";
+         $this->db->closeConnection();
          return false;
       }
+   } else {
+      echo "Error in connecting to database";
+      return false;
    }
+}
+
+
 }
