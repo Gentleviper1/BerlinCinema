@@ -1,15 +1,16 @@
 <?php
 class Customer
 {
-    public $userid ;
-    public $firstname;
-    public $lastname;
-    public $dob;
-    public $userstatus	;
-    public $email ;
-    public $password ;
-    public $phone;
-    public $age;
+    public  $userid ;
+    public $roleid;
+public  $name;
+
+public   $dob;
+public  $userstatus	;
+public  $email ;
+public  $password ;
+public  $phone;
+public  $age;
 
     // public function getuserid()
     // {

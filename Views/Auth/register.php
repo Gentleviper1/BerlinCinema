@@ -1,3 +1,19 @@
+<?php
+
+session_start();
+// Check if there is an error message to display
+if (isset($_SESSION["errMsg"])) {
+    $errMsg = $_SESSION["errMsg"];
+    unset($_SESSION["errMsg"]);
+} else {
+    $errMsg = "";
+}
+require_once '../../Model/Customer.php';
+require_once  '../../Control/AuthController.php';
+
+?>
+<!-- ============================================================== -->
+
 <!doctype html>
 <html lang="en">
 
@@ -35,24 +51,32 @@
     <!-- ============================================================== -->
     <!-- signup form  -->
     <!-- ============================================================== -->
-    <form class="splash-container">
+    <form class="splash-container" action="../../Control/RegisterationController.php" method="POST">
         <div class="card">
             <div class="card-header">
+                <div class="splash-description">
+                    <?php
+                    if ($errMsg != "") {
+                    ?>
+                        <div class="alert alert-danger" role="alert"><?php echo $errMsg;  ?></div>
+                    <?php
+                    }
+                    ?>
                 <h3 class="mb-1">Signup </h3>
                 <p>Please enter your information.</p>
             </div>
             <div class="card-body">
                 <div class="form-group">
                     <label for="">Username</label>
-                    <input class="form-control form-control-lg" type="text" name="nick" required="" placeholder="Username" autocomplete="off">
+                    <input class="form-control form-control-lg" type="text" name="username" required="" placeholder="Username" autocomplete="off">
                 </div>
                 <div class="form-group">
                     <label for="">Date Of Birth</label>
-                    <input class="form-control form-control-lg" type="date" required="" placeholder="Date of Birth">
+                    <input class="form-control form-control-lg" type="date" required="" name="dob" placeholder="Date of Birth">
                 </div>
                 <div class="form-group">
                     <label for="">Phone</label>
-                    <input class="form-control form-control-lg" type="phone" required="" placeholder="Phone" autocomplete="off">
+                    <input class="form-control form-control-lg" type="phone" required="" name="phone" placeholder="Phone" autocomplete="off">
                 </div>
                 <div class="form-group">
                     <label for="">email</label>
@@ -60,11 +84,11 @@
                 </div>
                 <div class="form-group">
                     <label for="">Password</label>
-                    <input class="form-control form-control-lg" id="pass1" type="password" required="" placeholder="Password">
+                    <input class="form-control form-control-lg" id="pass1" name="password" type="password" required="" placeholder="Password">
                 </div>
                 <div class="form-group">
                     <label for="">Confirm Password</label>
-                    <input class="form-control form-control-lg" required="" placeholder="Confirm passowrd" type="password" id="pass2">
+                    <input class="form-control form-control-lg" required=""  name="Confirm" placeholder="Confirm passowrd" type="password" id="pass2">
                 </div>
 
                 <div class="form-group pt-2">
