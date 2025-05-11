@@ -68,27 +68,62 @@ require_once  '../../Control/AuthController.php';
             <div class="card-body">
                 <div class="form-group">
                     <label for="">Username</label>
-                    <input class="form-control form-control-lg" type="text" name="username" required="" placeholder="Username" autocomplete="off">
+                    <input 
+                    class="form-control form-control-lg" 
+                    type="text" 
+                    name="username" 
+                    required="" 
+                    placeholder="Username" 
+                    autocomplete="off">
                 </div>
                 <div class="form-group">
                     <label for="">Date Of Birth</label>
-                    <input class="form-control form-control-lg" type="date" required="" name="dob" placeholder="Date of Birth">
+                    <input 
+                    class="form-control form-control-lg" 
+                    type="date" 
+                    required="" 
+                    name="dob" 
+                    placeholder="Date of Birth">
                 </div>
                 <div class="form-group">
                     <label for="">Phone</label>
-                    <input class="form-control form-control-lg" type="phone" required="" name="phone" placeholder="Phone" autocomplete="off">
+                    <input 
+                    class="form-control form-control-lg" 
+                    type="phone" 
+                    required="" 
+                    name="phone" 
+                    placeholder="Phone" 
+                    autocomplete="off">
                 </div>
                 <div class="form-group">
                     <label for="">email</label>
-                    <input class="form-control form-control-lg" type="email" name="email" required="" placeholder="E-mail" autocomplete="off">
+                    <input 
+                    class="form-control form-control-lg" 
+                    type="email" 
+                    name="email" 
+                    required="" 
+                    placeholder="E-mail" 
+                    autocomplete="off">
                 </div>
                 <div class="form-group">
                     <label for="">Password</label>
-                    <input class="form-control form-control-lg" id="pass1" name="password" type="password" required="" placeholder="Password">
+                    <input 
+                    class="form-control form-control-lg" 
+                    id="pass1" 
+                    name="password" 
+                    type="password" 
+                    required="" 
+                    placeholder="Password">
                 </div>
                 <div class="form-group">
                     <label for="">Confirm Password</label>
-                    <input class="form-control form-control-lg" required=""  name="Confirm" placeholder="Confirm passowrd" type="password" id="pass2">
+                    <input 
+                    class="form-control form-control-lg" 
+                    required=""  
+                    name="Confirm" 
+                    placeholder="Confirm passowrd" 
+                    type="password" 
+                    id="pass2">
                 </div>
 
                 <div class="form-group pt-2">
