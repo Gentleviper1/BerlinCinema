@@ -1,5 +1,5 @@
-<!doctype php>
-<php lang="en">
+<!doctype html>
+<html lang="en">
  
 <head>
     <!-- Required meta tags -->
@@ -864,4 +864,4 @@
     <script src="assets/libs/js/dashboard-ecommerce.js"></script>
 </body>
  
-</php>
+</html>
