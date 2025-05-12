@@ -65,7 +65,7 @@
 							<li><a class="active" href="#">Pages <i class="icofont icofont-simple-down"></i></a>
 							<li><a href="movies-details-2.php">Movie Details <i class="icofont icofont-simple-down"></i></a>
 							</li>
-							<li><a class="theme-btn" href="tickets.php"><i class="icofont icofont-ticket"></i> Tickets</a></li>
+							<a class="theme-btn" href="tickets.php"><i class="icofont icofont-ticket"></i> Tickets</a>
 						</ul>
 					</div>
 				</div>

@@ -50,7 +50,7 @@
 					</form>
 					<ul>
 
-						<li><a class="" href="../../Auth/login.php">Login</a></li>
+						<li><a class="" href="../../Views/Auth/login.php">Login</a></li>
 					</ul>
 				</div>
 				<div class="menu-area">
@@ -65,7 +65,7 @@
 							<li><a href="#">Pages <i class="icofont icofont-simple-down"></i></a>
 							<li><a href="movies-details-2.php">Movie Details <i class="icofont icofont-simple-down"></i></a>
 							</li>
-							<a class="theme-btn " href="../../Auth/login.php"><i class="icofont icofont-ticket"></i> Tickets</a>
+							<a class="theme-btn" href="../../Views/Auth/login.php"><i class="icofont icofont-ticket"></i> Tickets</a>
 						</ul>
 					</div>
 				</div>
@@ -198,7 +198,7 @@
 								</div>
 								<h4>130k voters</h4>
 							</div>
-							<!--  <a href="#" class="theme-btn "><i class="icofont icofont-ticket"></i> Get Ticket</a> -->>
+							<!--  <a href="#" class="theme-btn "><i class="icofont icofont-ticket"></i> Get Ticket</a> -->
 						</div>
 					</div>
 				</div>

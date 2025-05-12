@@ -37,7 +37,6 @@
     body {
       margin: 0;
       padding: 0;
-      background: url('assets/img/backk.png') no-repeat center center fixed;
       background-size: cover;
       color: white;
       font-family: 'Segoe UI', sans-serif;
