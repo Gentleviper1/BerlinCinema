@@ -2,17 +2,17 @@
 class Movie
 {
     private $movieId ;
-    private $title;
-    private $cast_members;
-    private $poster_url;
-    private $price	;
-    private $genre;
-    private $trailer ;
-    private $category;
-    private $description;
-    private $rdate;
-    private $duration;
-    private $is_active;
+    public $title;
+    public $cast_members;
+    public $poster_url;
+    public $price	;
+    public $genre;
+    public $trailer ;
+    public $category;
+    public $description;
+    public $rdate;
+    public $duration;
+    public $is_active;
 
     public function getMovieId()
     {

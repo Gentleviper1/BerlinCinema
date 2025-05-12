@@ -1,6 +1,11 @@
 <!doctype html>
 <html lang="en">
- 
+<?php
+
+include('../../Control/DBController.php'); 
+
+?>
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -84,13 +89,13 @@
                                 <li class="connection-list">
                                     <div class="row">
                                         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
-                                            <a href="#" class="connection-item"><img src="assets/images/github.png" alt="" > <span>Github</span></a>
+                                            <a href="#" class="connection-item"><img src="assets/images/github.png" alt=""> <span>Github</span></a>
                                         </div>
                                         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
-                                            <a href="#" class="connection-item"><img src="assets/images/dribbble.png" alt="" > <span>Dribbble</span></a>
+                                            <a href="#" class="connection-item"><img src="assets/images/dribbble.png" alt=""> <span>Dribbble</span></a>
                                         </div>
                                         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
-                                            <a href="#" class="connection-item"><img src="assets/images/dropbox.png" alt="" > <span>Dropbox</span></a>
+                                            <a href="#" class="connection-item"><img src="assets/images/dropbox.png" alt=""> <span>Dropbox</span></a>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -98,10 +103,10 @@
                                             <a href="#" class="connection-item"><img src="assets/images/bitbucket.png" alt=""> <span>Bitbucket</span></a>
                                         </div>
                                         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
-                                            <a href="#" class="connection-item"><img src="assets/images/mail_chimp.png" alt="" ><span>Mail chimp</span></a>
+                                            <a href="#" class="connection-item"><img src="assets/images/mail_chimp.png" alt=""><span>Mail chimp</span></a>
                                         </div>
                                         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
-                                            <a href="#" class="connection-item"><img src="assets/images/slack.png" alt="" > <span>Slack</span></a>
+                                            <a href="#" class="connection-item"><img src="assets/images/slack.png" alt=""> <span>Slack</span></a>
                                         </div>
                                     </div>
                                 </li>
@@ -145,60 +150,60 @@
                                 Menu
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link " href="index.php"  aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fa-fw fa-home"></i>Home <span class="badge badge-success">6</span></a>
-                                
+                                <a class="nav-link " href="index.php" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fa-fw fa-home"></i>Home <span class="badge badge-success">6</span></a>
+
                             </li>
-                              <li class="nav-item ">
-                                <a class="nav-link " href="#"  aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fa-fw fa-users"></i>Profile <span class="badge badge-success">6</span></a>
-                                 </li>
-                             <li class="nav-divider">
+                            <li class="nav-item ">
+                                <a class="nav-link " href="#" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fa-fw fa-users"></i>Profile <span class="badge badge-success">6</span></a>
+                            </li>
+                            <li class="nav-divider">
                                 Movies
                             </li>
 
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="Movies.php"  aria-expanded="false" data-target="#submenu-2" aria-controls="submenu-2"><i class="fa fa-fw fa-film"></i>Movies</a>
-                                
+                                <a class="nav-link" href="Movies.php" aria-expanded="false" data-target="#submenu-2" aria-controls="submenu-2"><i class="fa fa-fw fa-film"></i>Movies</a>
+
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="add-movie.php"  aria-expanded="false" data-target="#submenu-3" aria-controls="submenu-3"><i class="fa fa-fw fa-plus-circle"></i>Add Movies</a>
-                               </li>
-                                <li class="nav-item">
-                                <a class="nav-link" href="add-upcoming-movie.php"  aria-expanded="false" data-target="#submenu-3" aria-controls="submenu-3"><i class="fa fa-fw fa-plus-circle"></i>Add Upcoming Movie</a>
-                               </li>
+                                <a class="nav-link" href="add-movie.php" aria-expanded="false" data-target="#submenu-3" aria-controls="submenu-3"><i class="fa fa-fw fa-plus-circle"></i>Add Movies</a>
+                            </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="movie-details.php"  aria-expanded="false" data-target="#submenu-3" aria-controls="submenu-3"><i class="fa fa-fw fa-list"></i>Movies Details</a>
-                               </li>
-            
+                                <a class="nav-link" href="add-upcoming-movie.php" aria-expanded="false" data-target="#submenu-3" aria-controls="submenu-3"><i class="fa fa-fw fa-plus-circle"></i>Add Upcoming Movie</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="movie-details.php" aria-expanded="false" data-target="#submenu-3" aria-controls="submenu-3"><i class="fa fa-fw fa-list"></i>Movies Details</a>
+                            </li>
+
                             <li class="nav-divider">
                                 Shows
                             </li>
-                           
+
                             <li class="nav-item">
-                                <a class="nav-link" href="view-shows.php"  aria-expanded="false" data-target="#submenu-7" aria-controls="submenu-7"><i class="fa fa-fw fa-eye"></i>View Shows </a>
-                              
+                                <a class="nav-link" href="view-shows.php" aria-expanded="false" data-target="#submenu-7" aria-controls="submenu-7"><i class="fa fa-fw fa-eye"></i>View Shows </a>
+
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="add-shows.php"  aria-expanded="false" data-target="#submenu-8" aria-controls="submenu-8"><i class="fas fa-fw fa-columns"></i>Add Shows</a>
-                               <li class="nav-divider">
+                                <a class="nav-link" href="add-shows.php" aria-expanded="false" data-target="#submenu-8" aria-controls="submenu-8"><i class="fas fa-fw fa-columns"></i>Add Shows</a>
+                            <li class="nav-divider">
                                 Theatre
                             </li>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="theatre-details.php"  aria-expanded="false" data-target="#submenu-9" aria-controls="submenu-9"><i class="fas fa-fw fa-map-marker-alt"></i>Theatre Details</a>
-                                
-                            </li>
-                             <li class="nav-item">
-                                <a class="nav-link" href="add-theatre.php"  aria-expanded="false" data-target="#submenu-9" aria-controls="submenu-9"><i class="fas fa-fw fa-map"></i>Add Theatre</a>
-                                
+                                <a class="nav-link" href="theatre-details.php" aria-expanded="false" data-target="#submenu-9" aria-controls="submenu-9"><i class="fas fa-fw fa-map-marker-alt"></i>Theatre Details</a>
+
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="screenings.php"  aria-expanded="false" data-target="#submenu-10" aria-controls="submenu-10"><i class="fas fa-fw fa-ticket-alt"></i>Screenings</a>
-                               
+                                <a class="nav-link" href="add-theatre.php" aria-expanded="false" data-target="#submenu-9" aria-controls="submenu-9"><i class="fas fa-fw fa-map"></i>Add Theatre</a>
+
                             </li>
-                             <li class="nav-item">
-                                <a class="nav-link" href="bookings.php"  aria-expanded="false" data-target="#submenu-10" aria-controls="submenu-10"><i class="fa fa-fw fa-book"></i>Bookings</a>
-                               
+                            <li class="nav-item">
+                                <a class="nav-link" href="screenings.php" aria-expanded="false" data-target="#submenu-10" aria-controls="submenu-10"><i class="fas fa-fw fa-ticket-alt"></i>Screenings</a>
+
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="bookings.php" aria-expanded="false" data-target="#submenu-10" aria-controls="submenu-10"><i class="fa fa-fw fa-book"></i>Bookings</a>
+
                             </li>
                         </ul>
                     </div>
@@ -213,85 +218,123 @@
                 <div class="row">
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                         <h3 class="text-center"></h3>
-                          <!-- ============================================================== -->
+                        <!-- ============================================================== -->
                         <!-- basic form  -->
                         <!-- ============================================================== -->
                         <div class="row">
                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                 <div class="section-block" id="basicform">
-                                    
+
                                 </div>
                                 <div class="card">
+
                                     <h5 class="card-header">Add Movie</h5>
                                     <div class="card-body">
-                                        <form>
+                                        <form id="form1" action="../../Control/MovieController.php" method="post" enctype="multipart/form-data">
                                             <div class="form-group">
-                                                <label for="inputText3"  class="col-form-label">Movie Name</label>
+                                                <label for="inputText3" class="col-form-label">Movie Name</label>
+
                                                 <input id="inputText3" name="name" type="text" class="form-control">
+
                                             </div>
-                                             <div class="form-group">
+                                            <div class="form-group">
                                                 <label for="inputText3" class="col-form-label">Cast</label>
                                                 <input id="inputText3" name="cast" type="text" class="form-control">
+
+
                                             </div>
-                                            <div class="form-group">
-                                                <label for="exampleFormControlTextarea1">Description</label>
-                                                <textarea class="form-control" name="desc" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                            </div>
-                                            <div class="form-group">
-                                             <label class="control-label">Release Date</label>
-                                              <input type="date" name="rdate" class="form-control"/>
-             
-                                              </div>
-                                           
                                             <div class="custom-file mb-3">
-                                                <input type="file" name="image" class="custom-file-input" id="customFile">
-                                                <label class="custom-file-label" for="customFile">Add Image</label>
+                                                <!-- <input type="text" name="image" class="custom-file-input" id="customFile">
+                                                <label class="custom-file-label" for="customFile">Add Image</label>-->
+                                                <label for="inputText3" class="col-form-label">image</label>
+                                                <input id="inputText3" name="image" type="text" class="form-control">
+
+
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="exampleFormControlTextarea1">price</label>
+                                                <input id="inputText3" name="price" type="text" class="form-control">
+
+
                                             </div>
                                             <div class="form-group">
-                                            <label class="control-label">Trailer Youtube Link</label>
-                                           <input type="text" name="video" class="form-control"/>
-                                           
-                                           </div>
-                                            <a href="#" class="btn btn-dark btn-rounded active">Add Movie</a>
-                                        </form>
-                                       </div>
-                                    
-                                        </form>
+                                                <label for="exampleFormControlTextarea1">genre</label>
+                                                <input id="inputText3" name="genre" type="text" class="form-control">
+
+
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="control-label">Trailer Youtube Link</label>
+                                                <input type="text" name="trailer" class="form-control" />
+
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label">Category</label>
+                                                <input type="text" name="Category" class="form-control" />
+
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label">description</label>
+                                                <input type="text" name="description" class="form-control" />
+
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label">rdate</label>
+                                                <input type="date" name="rdate" class="form-control" />
+
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label">duration</label>
+                                                <input type="text" name="duration" class="form-control" />
+
+                                            </div>
+
+                                            <div class="form-group">
+                                                <button type="submit" class="btn btn-success">Add Movie</button>
+                                            </div>
                                     </div>
+
+                                    </form>
                                 </div>
-                            </div>
-                        </div>
-                        <!-- ============================================================== -->
-                        <!-- end basic form  -->
-                        <!-- ============================================================== -->
-                    </div>
-                </div>
-                 <div class="footer">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                             Copyright © 2025... <a href="#">Berlin Cinema</a> All rights reserved. 
-                        </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                            <div class="text-md-right footer-links d-none d-sm-block">
-                                <a href="javascript: void(0);">About</a>
-                                <a href="javascript: void(0);">Support</a>
-                                <a href="javascript: void(0);">Contact Us</a>
+
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- ============================================================== -->
+                <!-- end basic form  -->
+                <!-- ============================================================== -->
             </div>
-            <!-- ============================================================== -->
-            <!-- end footer -->
-            <!-- ============================================================== -->
         </div>
-    </div>
+        <div class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                        Copyright © 2025... <a href="#">Berlin Cinema</a> All rights reserved.
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="text-md-right footer-links d-none d-sm-block">
+                            <a href="javascript: void(0);">About</a>
+                            <a href="javascript: void(0);">Support</a>
+                            <a href="javascript: void(0);">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- ============================================================== -->
-            <!-- footer -->
-            <!-- ============================================================== -->
-             
+        </div>
+        <!-- ============================================================== -->
+        <!-- end footer -->
+        <!-- ============================================================== -->
+    </div>
+    </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- footer -->
+    <!-- ============================================================== -->
+
     <!-- ============================================================== -->
     <!-- end main wrapper -->
     <!-- ============================================================== -->
@@ -300,6 +343,7 @@
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
     <script src="assets/vendor/slimscroll/jquery.slimscroll.js"></script>
     <script src="assets/libs/js/main-js.js"></script>
+    
 </body>
- 
+
 </html>
