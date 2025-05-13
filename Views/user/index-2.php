@@ -104,7 +104,7 @@
 
                             <div class="slide-trailor">
                                 <h3>BOOK NOW !</h3>
-                                <a class="theme-btn theme-btn2" href="#"><i class="icofont icofont-play"></i>Get Tickets</a>
+                                <a class="theme-btn theme-btn2" href="tickets.php"><i class="icofont icofont-play"></i>Get Tickets</a>
                             </div>
                         </div>
                     </div>
@@ -132,7 +132,7 @@
 
                             <div class="slide-trailor">
                                 <h3>BOOK NOW !</h3>
-                                <a class="theme-btn theme-btn2" href="#"><i class="icofont icofont-play"></i> Tickets</a>
+                                <a class="theme-btn theme-btn2" href="tickets.php"><i class="icofont icofont-play"></i> Book Now !</a>
                             </div>
                         </div>
                     </div>
@@ -160,7 +160,7 @@
 
                             <div class="slide-trailor">
                                 <h3>BOOK NOW !</h3>
-                                <a class="theme-btn theme-btn2" href="#"><i class="icofont icofont-play"></i> Tickets</a>
+                                <a class="theme-btn theme-btn2" href="tickets.php"><i class="icofont icofont-play"></i> Book Now !</a>
                             </div>
                         </div>
                     </div>
@@ -190,7 +190,7 @@
                         </div>
                         <div class="slide-trailor">
                             <h3>BOOK NOW !</h3>
-                            <a class="theme-btn theme-btn2" href="#"><i class="icofont icofont-play"></i> Tickets</a>
+                            <a class="theme-btn theme-btn2" href="tickets.php"><i class="icofont icofont-play"></i> Book Now !</a>
                         </div>
                     </div>
                 </div>
@@ -221,7 +221,7 @@
 
                             <div class="slide-trailor">
                                 <h3>BOOK NOW !</h3>
-                                <a class="theme-btn theme-btn2" href="#"><i class="icofont icofont-play"></i> Tickets</a>
+                                <a class="theme-btn theme-btn2" href="tickets.php"><i class="icofont icofont-play"></i> Book Now !</a>
                             </div>
                         </div>
                     </div>
@@ -251,7 +251,7 @@
 
                             <div class="slide-trailor">
                                 <h3>BOOK NOW !</h3>
-                                <a class="theme-btn theme-btn2" href="#"><i class="icofont icofont-play"></i> Tickets</a>
+                                <a class="theme-btn theme-btn2" href="tickets.php"><i class="icofont icofont-play"></i> Book Now !</a>
                             </div>
                         </div>
                     </div>

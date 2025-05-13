@@ -1,3 +1,27 @@
+<?php
+session_start();
+require_once '../../Control/MovieController.php';
+
+// Get movies based on category
+$category = isset($_GET['category']) ? $_GET['category'] : 'all';
+switch($category) {
+	case 'latest':
+		$movies = getLatestMovies();
+		break;
+	case 'coming-soon':
+		$movies = getComingSoonMovies();
+		break;
+	case 'top-rated':
+		$movies = getTopRatedMovies();
+		break;
+	case 'released':
+		$movies = getRecentlyReleasedMovies();
+		break;
+	default:
+		$movies = getAllMovies();
+		break;
+}
+?>
 <!DOCTYPE HTML>
 <html lang="en">
 
@@ -23,6 +47,24 @@
 	<!-- Responsive CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css" media="all" />
 	<style>
+		/* Page Background */
+		body {
+			background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+			position: relative;
+		}
+
+		body::before {
+			content: '';
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: url('https://images.unsplash.com/photo-1536440136628-849c177e76a1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+			opacity: 0.1;
+			z-index: -1;
+		}
+
 		/* Rating Badge Styles */
 		.rating-badge {
 			position: absolute;
@@ -176,6 +218,419 @@
 				font-size: 12px;
 			}
 		}
+
+		/* تحسينات إضافية للتصفية */
+		.portfolio-item {
+			transition: all 0.3s ease;
+		}
+
+		.portfolio-menu li {
+			position: relative;
+			overflow: hidden;
+		}
+
+		.portfolio-menu li::after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			width: 0;
+			height: 2px;
+			background: #e50914;
+			transition: all 0.3s ease;
+			transform: translateX(-50%);
+		}
+
+		.portfolio-menu li:hover::after,
+		.portfolio-menu li.active::after {
+			width: 100%;
+		}
+
+		/* تحسين تأثيرات الانتقال */
+		.movie-card {
+			transition: all 0.4s ease;
+		}
+
+		/* إزالة تأثيرات الاختفاء */
+		.portfolio-item.hidden {
+			display: none;
+		}
+
+		/* Movie Grid Layout */
+		.portfolio-item {
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+			gap: 30px;
+			padding: 20px 0;
+		}
+
+		.movie-card {
+			background: rgba(26, 26, 26, 0.95);
+			border-radius: 10px;
+			overflow: hidden;
+			box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+			transition: all 0.3s ease;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			position: relative;
+			backdrop-filter: blur(5px);
+		}
+
+		.movie-card:hover {
+			transform: translateY(-5px);
+		}
+
+		.movie-poster {
+			position: relative;
+			width: 100%;
+			height: 400px;
+			overflow: hidden;
+		}
+
+		.movie-poster img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			transition: transform 0.3s ease;
+		}
+
+		.movie-card:hover .movie-poster img {
+			transform: scale(1.05);
+		}
+
+		.movie-info {
+			padding: 20px;
+			flex-grow: 1;
+			display: flex;
+			flex-direction: column;
+		}
+
+		.movie-title {
+			font-size: 20px;
+			color: #fff;
+			margin-bottom: 10px;
+			font-weight: 600;
+		}
+
+		.movie-description {
+			color: #ccc;
+			font-size: 14px;
+			margin-bottom: 15px;
+			flex-grow: 1;
+		}
+
+		.movie-meta {
+			background: rgba(0,0,0,0.8);
+			padding: 10px;
+			margin-bottom: 15px;
+			border-radius: 5px;
+		}
+
+		.movie-price {
+			font-size: 24px;
+			color: #9B6B9E;
+			font-weight: bold;
+			margin-bottom: 15px;
+		}
+
+		.movie-actions {
+			margin-top: auto;
+		}
+
+		.btn-success {
+			background: #e4d804;
+			color: #000;
+			border: none;
+			padding: 10px 20px;
+			border-radius: 5px;
+			font-weight: 600;
+			width: 100%;
+			text-align: center;
+			transition: all 0.3s ease;
+		}
+
+		.btn-success:hover {
+			background: #f5e642;
+			transform: translateY(-2px);
+		}
+
+		/* Portfolio Section */
+		.portfolio-area {
+			padding: 60px 0;
+			background: transparent;
+			position: relative;
+			min-height: calc(100vh - 400px); /* Adjust based on your header/footer height */
+		}
+
+		.portfolio-menu {
+			margin-bottom: 20px;
+		}
+
+		.portfolio-menu ul {
+			display: flex;
+			justify-content: center;
+			gap: 10px;
+			flex-wrap: nowrap;
+			padding: 0;
+			margin: 0;
+		}
+
+		.portfolio-menu li {
+			padding: 6px 12px;
+			background: #6B4E71;
+			border-radius: 5px;
+			cursor: pointer;
+			transition: all 0.3s ease;
+			font-size: 13px;
+			white-space: nowrap;
+		}
+
+		.portfolio-menu li a {
+			color: #fff;
+			text-decoration: none;
+			display: block;
+		}
+
+		.portfolio-menu li.active,
+		.portfolio-menu li:hover {
+			background: #9B6B9E;
+		}
+
+		/* Section Title Adjustments */
+		.section-title {
+			margin-bottom: 0;
+		}
+
+		.section-title h1 {
+			font-size: 20px;
+			margin: 0;
+			color: #9B6B9E;
+		}
+
+		/* Row Adjustments */
+		.row.flexbox-center {
+			align-items: center;
+			margin-bottom: 15px;
+		}
+
+		/* Responsive Adjustments */
+		@media (max-width: 768px) {
+			.portfolio-menu ul {
+				gap: 5px;
+			}
+
+			.portfolio-menu li {
+				padding: 4px 8px;
+				font-size: 12px;
+			}
+
+			.section-title h1 {
+				font-size: 18px;
+			}
+		}
+
+		/* Fix Footer Issue */
+		.footer {
+			position: relative;
+			margin-top: 60px;
+			background: #0a0a0a;
+			padding-top: 60px;
+		}
+
+		/* Book Now Button Styles */
+		.book-now-btn {
+			display: inline-block;
+			width: 80%;
+			padding: 8px 15px;
+			background: linear-gradient(45deg, #6B4E71, #9B6B9E);
+			color: #fff;
+			text-decoration: none;
+			border-radius: 5px;
+			font-weight: 600;
+			text-align: center;
+			transition: all 0.3s ease;
+			border: none;
+			cursor: pointer;
+			position: relative;
+			overflow: hidden;
+			margin: 10px auto;
+			font-size: 14px;
+		}
+
+		.book-now-btn i {
+			margin-right: 5px;
+			font-size: 14px;
+		}
+
+		.book-now-btn:hover {
+			transform: translateY(-2px);
+			box-shadow: 0 3px 10px rgba(107, 78, 113, 0.3);
+			background: linear-gradient(45deg, #9B6B9E, #6B4E71);
+		}
+
+		/* Movie Genre Styles */
+		.movie-genre {
+			text-align: center;
+			color: #9B6B9E;
+			font-size: 13px;
+			margin-top: 5px;
+			padding: 5px 10px;
+			background: rgba(107, 78, 113, 0.1);
+			border-radius: 3px;
+			display: inline-block;
+			width: 80%;
+			margin: 5px auto;
+		}
+
+		.movie-actions {
+			margin-top: auto;
+			padding: 10px 0;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		/* Portfolio Menu Styles */
+		.portfolio-menu li.active,
+		.portfolio-menu li:hover {
+			background: #9B6B9E;
+			color: #fff;
+		}
+
+		/* Responsive Adjustments */
+		@media (max-width: 768px) {
+			.book-now-btn {
+				width: 90%;
+				padding: 6px 12px;
+				font-size: 13px;
+			}
+
+			.movie-genre {
+				font-size: 12px;
+				width: 90%;
+			}
+		}
+
+		/* Breadcrumb Area */
+		.breadcrumb-area {
+			background: rgba(26, 26, 26, 0.95);
+			backdrop-filter: blur(5px);
+		}
+
+		.breadcrumb-area-content h1 {
+			color: #9B6B9E;
+		}
+
+		/* Screen Styles */
+		.screen {
+			position: relative;
+			width: 100%;
+			height: 100px;
+			background: linear-gradient(45deg, #1a1a1a, #2d2d2d);
+			border-radius: 50% / 10%;
+			margin: 30px 0;
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+			overflow: hidden;
+		}
+
+		.screen::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: linear-gradient(
+				to bottom,
+				rgba(255, 255, 255, 0.1) 0%,
+				rgba(255, 255, 255, 0.05) 50%,
+				rgba(255, 255, 255, 0) 100%
+			);
+			pointer-events: none;
+		}
+
+		.screen::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: radial-gradient(
+				circle at center,
+				rgba(255, 255, 255, 0.1) 0%,
+				rgba(255, 255, 255, 0) 70%
+			);
+			pointer-events: none;
+		}
+
+		.screen-content {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 90%;
+			height: 80%;
+			background: rgba(0, 0, 0, 0.3);
+			border-radius: 5px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #9B6B9E;
+			font-size: 24px;
+			font-weight: bold;
+			text-shadow: 0 0 10px rgba(155, 107, 158, 0.5);
+			letter-spacing: 2px;
+		}
+
+		.screen-content::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: linear-gradient(
+				45deg,
+				rgba(155, 107, 158, 0.1) 0%,
+				rgba(155, 107, 158, 0) 100%
+			);
+			animation: screenGlow 3s infinite;
+		}
+
+		@keyframes screenGlow {
+			0% {
+				opacity: 0.5;
+			}
+			50% {
+				opacity: 0.8;
+			}
+			100% {
+				opacity: 0.5;
+			}
+		}
+
+		/* Add screen to the portfolio section */
+		.portfolio-area {
+			position: relative;
+		}
+
+		.portfolio-area::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			height: 200px;
+			background: linear-gradient(
+				to bottom,
+				rgba(26, 26, 26, 0.95) 0%,
+				rgba(26, 26, 26, 0) 100%
+			);
+			pointer-events: none;
+			z-index: 1;
+		}
 	</style>
 	<!--[if lt IE 9]>
 		  <script src="https://oss.maxcdn.com/php5shiv/3.7.3/php5shiv.min.js"></script>
@@ -250,274 +705,79 @@
 				<div class="col-lg-6 text-center text-lg-right">
 					<div class="portfolio-menu">
 						<ul>
-							<li data-filter="*" class="active">Latest</li>
-							<li data-filter=".soon">Coming Soon</li>
-							<li data-filter=".top">Top Rated</li>
-							<li data-filter=".released">Recently Released</li>
+							<li class="<?php echo $category === 'all' ? 'active' : ''; ?>">
+								<a href="?category=all">All Movies</a>
+							</li>
+							<li class="<?php echo $category === 'latest' ? 'active' : ''; ?>">
+								<a href="?category=latest">Latest</a>
+							</li>
+							<li class="<?php echo $category === 'coming-soon' ? 'active' : ''; ?>">
+								<a href="?category=coming-soon">Coming Soon</a>
+							</li>
+							<li class="<?php echo $category === 'top-rated' ? 'active' : ''; ?>">
+								<a href="?category=top-rated">Top Rated</a>
+							</li>
+							<li class="<?php echo $category === 'released' ? 'active' : ''; ?>">
+								<a href="?category=released">Released</a>
+							</li>
 						</ul>
 					</div>
 				</div>
 			</div>
 			<hr />
 			<div class="row portfolio-item">
-				<!-- The Godfather -->
-				<div class="col-lg-3 col-md-4 col-sm-6 soon released">
-					<div class="single-portfolio">
-						<div class="single-portfolio-img">
-							<img src="assets/img/The God Father.jpg" alt="The Godfather" />
-							<div class="rating-badge">R</div>
-							<a href="https://www.youtube.com/watch?v=UaVTIH8mujA?si=Kl5I_WRov0m2JlcO" class="popup-youtube">
-								<i class="icofont icofont-ui-play"></i>
-							</a>
-							<div class="movie-meta">
-								<span class="duration"><i class="icofont icofont-clock-time"></i> 2h 55m</span>
-								<span class="genre">Crime, Drama</span>
-								<span class="release-date">1972</span>
+				<?php if ($movies && count($movies) > 0): ?>
+					<?php foreach ($movies as $movie): ?>
+						<div class="col-lg-4 col-md-6 col-sm-12">
+							<div class="movie-card">
+								<div class="movie-poster">
+									<img src="<?php echo htmlspecialchars($movie['poster_url']); ?>" 
+										 alt="<?php echo htmlspecialchars($movie['title']); ?>">
+								</div>
+								<div class="movie-info">
+									<h3 class="movie-title"><?php echo htmlspecialchars($movie['title']); ?></h3>
+									<p class="movie-description"><?php echo htmlspecialchars($movie['description']); ?></p>
+									<div class="movie-meta">
+										<span class="movie-duration">
+											<i class="icofont icofont-clock-time"></i>
+											<?php echo htmlspecialchars($movie['duration']); ?> min
+										</span>
+									</div>
+									<div class="movie-price">
+										$<?php echo htmlspecialchars($movie['price']); ?>
+									</div>
+									<div class="movie-actions">
+										<a href="book-ticket.php?id=<?php echo $movie['movie_id']; ?>" 
+										   class="book-now-btn">
+											<i class="icofont icofont-ticket"></i>
+											Book Now
+										</a>
+										<div class="movie-genre">
+											<?php echo htmlspecialchars($movie['genre']); ?>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div class="portfolio-content">
-							<h4>The Godfather</h4>
-							<div class="review">
-								<div class="author-review">
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-								</div>
-								<h4>180k voters</h4>
-							</div>
-							<a href="#" class="theme-btn "><i class="icofont icofont-ticket"></i> Get Ticket</a>
+					<?php endforeach; ?>
+				<?php else: ?>
+					<div class="col-12">
+						<div class="alert alert-info">
+							<i class="icofont icofont-info-circle"></i>
+							No movies available at the moment.
 						</div>
 					</div>
-				</div>
-
-				<!-- The Wolverine -->
-				<div class="col-lg-3 col-md-4 col-sm-6 top">
-					<div class="single-portfolio">
-						<div class="single-portfolio-img">
-							<img src="assets/img/the Wolverine.jpeg" alt="The Wolverine" />
-							<div class="rating-badge">PG-13</div>
-							<a href="https://www.youtube.com/watch?v=u1VCP3O8wG0?si=qzTF0VPLCyb6xNMK" class="popup-youtube">
-								<i class="icofont icofont-ui-play"></i>
-							</a>
-							<div class="movie-meta">
-								<span class="duration"><i class="icofont icofont-clock-time"></i> 2h 6m</span>
-								<span class="genre">Action, Sci-Fi</span>
-								<span class="release-date">2013</span>
-							</div>
-						</div>
-						<div class="portfolio-content">
-							<h4>The Wolverine</h4>
-							<div class="review">
-								<div class="author-review">
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-								</div>
-								<h4>200k voters</h4>
-							</div>
-							<a href="#" class="theme-btn "><i class="icofont icofont-ticket"></i> Get Ticket</a>
-						</div>
-					</div>
-				</div>
-
-				<!-- Silence of the Lambs -->
-				<div class="col-lg-3 col-md-4 col-sm-6 soon">
-					<div class="single-portfolio">
-						<div class="single-portfolio-img">
-							<img src="assets/img/scilenceOfTheLambs.webp" alt="Silence of the Lambs" />
-							<div class="rating-badge">R</div>
-							<a href="https://www.youtube.com/watch?v=6iB21hsprAQ?si=9XixT2sz1OIQZqLc" class="popup-youtube">
-								<i class="icofont icofont-ui-play"></i>
-							</a>
-							<div class="movie-meta">
-								<span class="duration"><i class="icofont icofont-clock-time"></i> 1h 58m</span>
-								<span class="genre">Crime, Thriller</span>
-								<span class="release-date">1991</span>
-							</div>
-						</div>
-						<div class="portfolio-content">
-							<h4>Silence of the Lambs</h4>
-							<div class="review">
-								<div class="author-review">
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-								</div>
-								<h4>130k voters</h4>
-							</div>
-							<a href="#" class="theme-btn "><i class="icofont icofont-ticket"></i> Get Ticket</a>
-						</div>
-					</div>
-				</div>
-
-				<!-- Until Dawn -->
-				<div class="col-lg-3 col-md-4 col-sm-6 top released">
-					<div class="single-portfolio">
-						<div class="single-portfolio-img">
-							<img src="assets/img/Until_dawn_movie.jpg" alt="Until Dawn" />
-							<div class="rating-badge">R</div>
-							<a href="https://www.youtube.com/watch?v=2b3vBaINZ7w?si=yfP26QMgMLAmWp6p" class="popup-youtube">
-								<i class="icofont icofont-ui-play"></i>
-							</a>
-							<div class="movie-meta">
-								<span class="duration"><i class="icofont icofont-clock-time"></i> 1h 45m</span>
-								<span class="genre">Horror, Interactive</span>
-								<span class="release-date">2024</span>
-							</div>
-						</div>
-						<div class="portfolio-content">
-							<h4>Until Dawn</h4>
-							<div class="review">
-								<div class="author-review">
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-								</div>
-								<h4>236k voters</h4>
-							</div>
-							<a href="#" class="theme-btn "><i class="icofont icofont-ticket"></i> Get Ticket</a>
-						</div>
-					</div>
-				</div>
-
-				<!-- The Amateur -->
-				<div class="col-lg-3 col-md-4 col-sm-6 released">
-					<div class="single-portfolio">
-						<div class="single-portfolio-img">
-							<img src="assets/img/The amateur.jpg" alt="The Amateur" />
-							<div class="rating-badge">PG-13</div>
-							<a href="https://www.youtube.com/watch?v=DCWcK4c-F8Q?si=vRiyuZhyt7sHquEW" class="popup-youtube">
-								<i class="icofont icofont-ui-play"></i>
-							</a>
-							<div class="movie-meta">
-								<span class="duration"><i class="icofont icofont-clock-time"></i> 1h 52m</span>
-								<span class="genre">Action, Thriller</span>
-								<span class="release-date">2024</span>
-							</div>
-						</div>
-						<div class="portfolio-content">
-							<h4>The Amateur</h4>
-							<div class="review">
-								<div class="author-review">
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-								</div>
-								<h4>335k voters</h4>
-							</div>
-							<a href="#" class="theme-btn "><i class="icofont icofont-ticket"></i> Get Ticket</a>
-						</div>
-					</div>
-				</div>
-
-				<!-- Lucy 2 -->
-				<div class="col-lg-3 col-md-4 col-sm-6 soon top">
-					<div class="single-portfolio">
-						<div class="single-portfolio-img">
-							<img src="assets/img/Lucy2.jpg" alt="Lucy 2" />
-							<div class="rating-badge">R</div>
-							<a href="https://www.youtube.com/watch?v=deMHi69NA1Q?si=trrN7Z-eQIhyZDSV" class="popup-youtube">
-								<i class="icofont icofont-ui-play"></i>
-							</a>
-							<div class="movie-meta">
-								<span class="duration"><i class="icofont icofont-clock-time"></i> 1h 49m</span>
-								<span class="genre">Sci-Fi, Action</span>
-								<span class="release-date">2024</span>
-							</div>
-						</div>
-						<div class="portfolio-content">
-							<h4>Lucy 2</h4>
-							<div class="review">
-								<div class="author-review">
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-								</div>
-								<h4>270k voters</h4>
-							</div>
-							<a href="#" class="theme-btn "><i class="icofont icofont-ticket"></i> Get Ticket</a>
-						</div>
-					</div>
-				</div>
-
-				<!-- Unstoppable 2 -->
-				<div class="col-lg-3 col-md-4 col-sm-6 soon">
-					<div class="single-portfolio">
-						<div class="single-portfolio-img">
-							<img src="assets/img/unstoppable2.jpg" alt="Unstoppable 2" />
-							<div class="rating-badge">PG-13</div>
-							<a href="https://www.youtube.com/watch?v=fxEEdR2ZTDw?si=Yzde-LuKXvRqdtJR" class="popup-youtube">
-								<i class="icofont icofont-ui-play"></i>
-							</a>
-							<div class="movie-meta">
-								<span class="duration"><i class="icofont icofont-clock-time"></i> 1h 38m</span>
-								<span class="genre">Action, Thriller</span>
-								<span class="release-date">2024</span>
-							</div>
-						</div>
-						<div class="portfolio-content">
-							<h4>Unstoppable 2</h4>
-							<div class="review">
-								<div class="author-review">
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-								</div>
-								<h4>360k voters</h4>
-							</div>
-							<a href="#" class="theme-btn "><i class="icofont icofont-ticket"></i> Get Ticket</a>
-						</div>
-					</div>
-				</div>
-
-				<!-- Extraction 3 -->
-				<div class="col-lg-3 col-md-4 col-sm-6 top released">
-					<div class="single-portfolio">
-						<div class="single-portfolio-img">
-							<img src="assets/img/Extraction 3.jpg" alt="Extraction 3" />
-							<div class="rating-badge">R</div>
-							<a href="https://www.youtube.com/watch?v=O_pCN2xPjSc?si=gNOMYJndooyysDxn" class="popup-youtube">
-								<i class="icofont icofont-ui-play"></i>
-							</a>
-							<div class="movie-meta">
-								<span class="duration"><i class="icofont icofont-clock-time"></i> 2h 7m</span>
-								<span class="genre">Action, Thriller</span>
-								<span class="release-date">2024</span>
-							</div>
-						</div>
-						<div class="portfolio-content">
-							<h4>Extraction 3</h4>
-							<div class="review">
-								<div class="author-review">
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-									<i class="icofont icofont-star"></i>
-								</div>
-								<h4>150k voters</h4>
-							</div>
-							<a href="#" class="theme-btn "><i class="icofont icofont-ticket"></i> Get Ticket</a>
-						</div>
-					</div>
-				</div>
+				<?php endif; ?>
 			</div>
 		</div>
 	</section><!-- portfolio section end -->
+
+	<!-- Add screen div after the portfolio menu -->
+	<div class="screen">
+		<div class="screen-content">
+			BERLIN CINEMA
+		</div>
+	</div>
 
 	<!-- footer section start -->
 	<!-- footer section start -->
@@ -621,10 +881,6 @@
 	<script src="assets/js/isotope.pkgd.min.js"></script>
 	<!-- main JS -->
 	<script src="assets/js/main.js"></script>
-
-
-
-
 
 </body>
 

@@ -224,38 +224,52 @@
                                 <div class="card">
                                     <h5 class="card-header">Add Movie</h5>
                                     <div class="card-body">
-                                        <form>
+                                        <form action="../../Control/AddMovieController.php" method="POST">
                                             <div class="form-group">
                                                 <label for="inputText3"  class="col-form-label">Movie Name</label>
-                                                <input id="inputText3" name="name" type="text" class="form-control">
+                                                <input id="inputText3" name="name" type="text" class="form-control" required>
                                             </div>
                                              <div class="form-group">
                                                 <label for="inputText3" class="col-form-label">Cast</label>
-                                                <input id="inputText3" name="cast" type="text" class="form-control">
+                                                <input id="inputText3" name="cast" type="text" class="form-control" required>
                                             </div>
                                             <div class="form-group">
                                                 <label for="exampleFormControlTextarea1">Description</label>
-                                                <textarea class="form-control" name="desc" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                <textarea class="form-control" name="description" id="exampleFormControlTextarea1" rows="3" required></textarea>
                                             </div>
                                             <div class="form-group">
                                              <label class="control-label">Release Date</label>
-                                              <input type="date" name="rdate" class="form-control"/>
-             
+                                              <input type="date" name="rdate" class="form-control" required/>
                                               </div>
-                                           
-                                            <div class="custom-file mb-3">
-                                                <input type="file" name="image" class="custom-file-input" id="customFile">
-                                                <label class="custom-file-label" for="customFile">Add Image</label>
+                                            <div class="form-group">
+                                                <label for="inputText3" class="col-form-label">Price</label>
+                                                <input id="inputText3" name="price" type="number" class="form-control" required>
                                             </div>
                                             <div class="form-group">
-                                            <label class="control-label">Trailer Youtube Link</label>
-                                           <input type="text" name="video" class="form-control"/>
-                                           
-                                           </div>
-                                            <a href="#" class="btn btn-dark btn-rounded active">Add Movie</a>
-                                        </form>
-                                       </div>
-                                    
+                                                <label for="inputText3" class="col-form-label">Genre</label>
+                                                <input id="inputText3" name="genre" type="text" class="form-control" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputText3" class="col-form-label">Trailer URL</label>
+                                                <input id="inputText3" name="trailer" type="url" class="form-control" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputText3" class="col-form-label">Category</label>
+                                                <select name="Category" class="form-control" required>
+                                                    <option value="soon">Coming Soon</option>
+                                                    <option value="top">Top Rated</option>
+                                                    <option value="released">Recently Released</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputText3" class="col-form-label">Duration (e.g., 2h 30m)</label>
+                                                <input id="inputText3" name="duration" type="text" class="form-control" required>
+                                            </div>
+                                            <div class="custom-file mb-3">
+                                                <input type="file" name="image" class="custom-file-input" id="customFile" required>
+                                                <label class="custom-file-label" for="customFile">Add Image</label>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Add Movie</button>
                                         </form>
                                     </div>
                                 </div>
