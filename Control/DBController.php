@@ -4,7 +4,7 @@ class DBController
     public $dbHost = "localhost";
     public $dbUser = "root";
     public $dbPass = "";
-    public $dbName = "swe1";
+    public $dbName = "OurWebsite";
    
     public $conn;
 
